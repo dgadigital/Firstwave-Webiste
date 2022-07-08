@@ -1,9 +1,9 @@
 input.form-control,
 select.form-control,
 textarea.form-control {
+    padding: 12.5px 10px;
     font-size: 14px;
-    padding: 15px 15px;
-    border: 2px solid #d8d9dd;
+    border: 2px solid $semi-mid-grey;
     border-radius: 10px;
 
     &:focus,
@@ -12,19 +12,32 @@ textarea.form-control {
         color: #969191;
         box-shadow: none;
     }
-
     
     &::-webkit-input-placeholder { 
-        color: #d8d9dd;
+        color: $semi-mid-grey;
         font-family: $font-montserrat-semibold;
     }
 
     &:-ms-input-placeholder {
-        color: #d8d9dd;
+        color: $semi-mid-grey;
     }
 
     &::placeholder {
-        color: #d8d9dd;
+        color: $semi-mid-grey;
     }
 
+    &:not([size]):not([multiple]){
+        height: calc(3.25rem + 2px);
+        font-family: $font-montserrat-semibold;
+    }
+}
+select.form-control{    
+    color: $semi-mid-grey;
+}
+
+label{
+    color: $mid-grey;
+    font-family: $font-montserrat-semibold;
+    display:flex;
+    align-items:center;
 }

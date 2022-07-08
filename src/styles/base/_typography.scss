@@ -16,6 +16,7 @@ body {
 }
 
 h1,
+.h1,
 .title-ticker {
   font-size: 26px;
   line-height: 36px;
@@ -41,4 +42,27 @@ h2, h3 {
     font-size: 30px;
     line-height: 40px;
   }
+}
+
+h4{
+  strong{    
+    font-family: $font-montserrat-bold;
+  }  
+}
+
+.text-yellow{
+  color: $yellow;
+}
+.text-orange{
+  color: $brand-color;
+}
+
+.line-height-1{
+  line-height:1rem;
+}
+.line-height-2{
+  line-height:1.5rem;
+}
+.line-height-3{
+  line-height:1.5rem;
 }

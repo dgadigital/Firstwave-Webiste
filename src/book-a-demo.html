@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Modular Gulp Template</title>
+
+  <link rel="icon" href="./assets/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./styles/main.min.css">
+  <!--[if lte IE 9]>
+    <link href="stylesheets/non-responsive.css" rel="stylesheet" />
+  <![endif]-->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!--[if lt IE 9]>
+    <div id="browser-notification" class="alert alert-danger">
+      <div class="container">
+        We are sorry but it looks like your <a href="http://www.whatbrowser.org/intl/en_us/" target=_blank>browser</a> doesn't support our website features. In order to get the full experience please download a new version of <a title="Download Chrome" href="http://www.google.com/chrome/" target=_blank>Chrome</a>, <a title="Download Safari" href="http://www.apple.com/safari/download/" target=_blank>Safari</a>, <a title="Download Firefox" href="http://www.mozilla.com/firefox/" target=_blank>Firefox</a>, or <a title="Download Internet Explorer" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target=_blank>Internet Explorer</a>.
+      </div>
+    </div>
+  <![endif]-->
+
+  <header>
+
+    <nav class="top-nav">
+      <div class="container">
+        <div class="top-nav-wrapper">
+            <ul>
+              <li>
+                <a href="#"><img src=".\assets\images\search-icon.png"></a>
+              </li>
+              <li>
+                <a href="#">Login</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-light navbar-expand-lg main-nav">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src=".\assets\images\logo.png"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+
+
+
+                <li class="nav-item dropdown">
+
+                  <a class="nav-link toggle-arrow" href="/components.html" >Products </a>
+                  <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+
+                  <div class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuLink">
+
+
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+
+
+                  </div>
+
+
+                </li>
+
+
+
+
+
+
+
+
+
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" title="Solutions" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Solutions
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" title="Resources" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Resources
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" title="About" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" title="Contact" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+
+                <li class="nav-item nav-btn">
+                  <a class="btn btn-brand btn-arrow" href="#">Book a Demo</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="home">
+    <div class="section-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h1>Ready To Take the Next Step with NMIS</h1>
+              <h2>Book In For A Guided Demonstration</h2>
+              <p>Book in simply 2 minutes, with one of our software specialist to see the power of our network solutions in action. All demonstrations are interactive, personalised, and free.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-1">
+            <div class="image mb-5 text-center text-md-left">
+              <img src="\assets\images\image-book-a-demo.png" class="img-fluid">
+            </div>
+            <div class="content pt-4">
+              <ul class="pl-0 list-unstyled">
+                <li class="mb-4">See the features that matter most to you</li>
+                <li class="mb-4">Learn how FirstWave's software suite can be customised for your business needs</li>
+                <li class="mb-4">Understand how Firstwave's solutions can save your team's time and resources</li>
+              </ul>
+            </div>
+            <div class="image-list pr-lg-5 mb-4">
+              <div class="row align-items-center">
+                <div class="col-3 text-center text-md-left">
+                  <img src="\assets\images\badge-1.png" class="img-fluid mb-2">
+                </div> 
+                <div class="col-3 text-center">
+                  <img src="\assets\images\badge-2.png" class="img-fluid mb-2">
+                </div> 
+                <div class="col-3 text-center">
+                  <img src="\assets\images\badge-3.png" class="img-fluid mb-2">
+                </div> 
+                <div class="col-3 text-center">
+                  <img src="\assets\images\badge-4.png" class="img-fluid mb-2">
+                </div> 
+              </div>          
+            </div>
+          </div>
+          <div class="col-md-6 order-2">   
+            <div class="form-container">
+              <input type="text" class="form-control w-100 mb-3" placeholder="First Name*">            
+              <input type="text" class="form-control w-100 mb-3" placeholder="Company*">            
+              <input type="text" class="form-control w-100 mb-3" placeholder="Email Address*">            
+              <input type="text" class="form-control w-100 mb-3" placeholder="Contact Number*">            
+              <input type="text" class="form-control w-100 mb-3" placeholder="Your Country*">            
+              <select class="form-control w-100 mb-3">
+                <option selected="" disabled="">Your Device Count</option>
+                <option value="1">1 Device</option>
+                <option value="2">2 Devices</option>
+                <option value="3">3 Devices</option>
+                <option value="4">4 Devices</option>
+                <option value="5">5 Devices</option>
+              </select>
+            </div>
+            
+            <textarea class="form-control" placeholder="What you hope to find out from this demo"></textarea>
+
+            <div class="row mt-3">              
+              <div class="col-12">
+                <p class="small"><strong>Please select the areas your interested in</strong></p>
+              </div>
+              <div class="col-md-5">
+                <span class="wpcf7-form-control-wrap checkbox-385 d-block">
+                  <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                    <span class="wpcf7-list-item">
+                      <label class="small">
+                        <input type="checkbox" name="checkbox-385[]" value="test">
+                        <span class="wpcf7-list-item-label ml-2">Secure</span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+                <span class="wpcf7-form-control-wrap checkbox-385 d-block">
+                  <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                    <span class="wpcf7-list-item">
+                      <label class="small">
+                        <input type="checkbox" name="checkbox-385[]" value="test">
+                        <span class="wpcf7-list-item-label ml-2">Audit</span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+                <span class="wpcf7-form-control-wrap checkbox-385 d-block">
+                  <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                    <span class="wpcf7-list-item">
+                      <label class="small">
+                        <input type="checkbox" name="checkbox-385[]" value="test">
+                        <span class="wpcf7-list-item-label ml-2">Manage</span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="col-md-7">
+                <span class="wpcf7-form-control-wrap checkbox-385 d-block pl-lg-4">
+                  <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                    <span class="wpcf7-list-item">
+                      <label class="small">
+                        <input type="checkbox" name="checkbox-385[]" value="test">
+                        <span class="wpcf7-list-item-label ml-2">Automation</span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+                <span class="wpcf7-form-control-wrap checkbox-385 d-block pl-lg-4">
+                  <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                    <span class="wpcf7-list-item">
+                      <label class="small">
+                        <input type="checkbox" name="checkbox-385[]" value="test">
+                        <span class="wpcf7-list-item-label ml-2">Dashboarding</span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+                <span class="wpcf7-form-control-wrap checkbox-385 d-block pl-lg-4">
+                  <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                    <span class="wpcf7-list-item">
+                      <label class="small">
+                        <input type="checkbox" name="checkbox-385[]" value="test">
+                        <span class="wpcf7-list-item-label ml-2">Managed Service Provider</span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <a href="#" class="btn btn-brand btn-arrow w-100 text-left mt-3 mb-4">Book a Demo</a>
+                <div class="d-block pb-3">
+                  <p class="small line-height-2 text-orange mb-0"><strong>Thank you. Your booking is being processed.</strong></p>
+                  <p class="small line-height-2">Please check your email, a message will be sent to you shortly to confirm your booking.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-image-list border-top border-bottom">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="h1 text-center">The Platform Used By The World's Leading Service Providers</h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col text-center">
+            <img src="\assets\images\service-provider-1.png" class="img-fluid">
+          </div>
+          <div class="col text-center">
+            <img src="\assets\images\service-provider-2.png" class="img-fluid">
+          </div>
+          <div class="col text-center">
+            <img src="\assets\images\service-provider-3.png" class="img-fluid">
+          </div>
+          <div class="col text-center">
+            <img src="\assets\images\service-provider-4.png" class="img-fluid">
+          </div>
+          <div class="col text-center">
+            <img src="\assets\images\service-provider-5.png" class="img-fluid">
+          </div>
+          <div class="col text-center">
+            <img src="\assets\images\service-provider-6.png" class="img-fluid">
+          </div>
+          <div class="col text-center">
+            <img src="\assets\images\service-provider-7.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3-columns">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="h1 text-center mt-5">Why FirstWave?</h2>
+            <h2 class="text-center">Protect People. Defend Data.<br>Comprehensive business suite</h2>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-4 text-center">
+            <img src="\assets\images\why-1.png" class="img-fluid my-4">
+            <div class="content px-lg-3 mx-lg-2">
+              <h4><strong>Rapid scale-out</strong> while lowering cost-to-serve</h2>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="\assets\images\why-2.png" class="img-fluid my-4">
+            <div class="content px-lg-3 mx-lg-2">
+              <h4><strong>Automated software</strong> that solves real problems</h2>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="\assets\images\why-1.png" class="img-fluid my-4">
+            <div class="content px-lg-3 mx-lg-2">
+              <h4>A new tech powerhouse for the ultimate <strong>end-to-end solution</strong></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-review-list">
+      <div class="container py-4 mb-5">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card p-4">              
+              <img src="\assets\images\next-link.png" class="img-fluid" width="170">
+              <div class="my-4">
+                <i class="fas fa-star text-yellow"></i>
+                <i class="fas fa-star text-yellow"></i>
+                <i class="fas fa-star text-yellow"></i>
+                <i class="fas fa-star text-yellow"></i>
+                <i class="fas fa-star text-yellow"></i>
+              </div>
+              <div class="content font-italic">
+                "NMIS is hands down one of the best data collection monitoring suites we have ever used. The data and enriched alerting it provides is exactly what we were looking for to make data-driven network decisions for upgrade and growth. It has set us on the path from reactive to proactive!"
+              </div>
+              <div class="author font-weight-bold mt-3 h6">
+                Jordan Long
+              </div>
+              <div class="company h6 small mb-3">
+                Director of Network Operations
+              </div>
+            </div>            
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card p-4">              
+              <img src="\assets\images\next-link.png" class="img-fluid" width="170">
+              <div class="my-4">
+                <i class="fas fa-star text-yellow"></i>
+                <i class="fas fa-star text-yellow"></i>
+                <i class="fas fa-star text-yellow"></i>
+                <i class="fas fa-star text-yellow"></i>
+                <i class="fas fa-star text-yellow"></i>
+              </div>
+              <div class="content font-italic">
+                "NMIS is hands down one of the best data collection monitoring suites we have ever used. The data and enriched alerting it provides is exactly what we were looking for to make data-driven network decisions for upgrade and growth. It has set us on the path from reactive to proactive!"
+              </div>
+              <div class="author font-weight-bold mt-3 h6">
+                Jordan Long
+              </div>
+              <div class="company h6 small mb-3">
+                Director of Network Operations
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-cta bg-dark-blue">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-light py-4">
+            <div class="content pr-lg-5">
+              <h2 class="text-light">Need Help?</h2>
+              <p class="small line-height-2">Find out how First wave can scale your network management and cybersecurity of your businesss.</p>
+              <a href="#" class="btn btn-brand btn-arrow mt-2">Contact Us</a>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img src="\assets\images\image-cta.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- build:js scripts/main.min.js -->
+  <script src="./scripts/vendors/jquery.min.js"></script>
+  <script src="./scripts/vendors/popper.min.js"></script>
+  <script src="./scripts/vendors/bootstrap.min.js"></script>
+  <script src="./scripts/vendors/swiper.min.js"></script>
+  <script src="./scripts/core/base.js"></script>
+  <script src="./scripts/modules/theme-module.js"></script>
+  <script src="./scripts/bootstrapper.js"></script>
+  <!-- endbuild -->
+
+  <!--[if lte IE 9]>
+    <script src="javascripts/non-responsive.js"></script>
+  <![endif]-->
+</body>
+
+</html>
