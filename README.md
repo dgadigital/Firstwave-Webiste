@@ -38,3 +38,4 @@
     * `imagemin-giflossy`
 ### 1.0.0
   * initial commit
+  * npm install node-sass@4.14.1

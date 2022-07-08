@@ -4,4 +4,10 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
-@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+
+@include font-face($font-montserrat-light, $base-url + 'fonts/', 'Montserrat-Light', 'Montserrat-Light', 300);
+@include font-face($font-montserrat, $base-url + 'fonts/', 'Montserrat-Regular', 'Montserrat-Regular', 400);
+@include font-face($font-montserrat-medium, $base-url + 'fonts/', 'Montserrat-Medium', 'Montserrat-Medium', 500);
+@include font-face($font-montserrat-semibold, $base-url + 'fonts/', 'Montserrat-SemiBold', 'Montserrat-SemiBold', 600);
+@include font-face($font-montserrat-bold, $base-url + 'fonts/', 'Montserrat-Bold', 'Montserrat-Bold', 700);
+

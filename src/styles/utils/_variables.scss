@@ -5,10 +5,15 @@
 // -----------------------------------------------------------------------------
 
 /// Regular font family
-$font-opensans: 'Open Sans';
+$font-montserrat-light: 'Montserrat Light';
+$font-montserrat: 'Montserrat';
+$font-montserrat-medium: 'Montserrat Medium';
+$font-montserrat-semibold: 'Montserrat Semibold';
+$font-montserrat-bold: 'Montserrat Bold';
+
 
 /// @type List
-$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: $font-montserrat, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -16,15 +21,20 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Copy text color
 /// @type Color
-$text-color: #222 !default;
+$text-color: #12141d !default;
+$title-color: #12141d !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #E50050 !default;
+$brand-color: #e63e31 !default;
 
-/// Light grey
+//blue
+$brand-dark-blue: #1f284f !default;
+$brand-light-blue: #3a6097 !default;
+
+/// Light greyc
 /// @type Color
-$light-grey: #EDEDED !default;
+$light-grey: #f6f6f6 !default;
 
 /// Medium grey
 /// @type Color
@@ -32,7 +42,12 @@ $mid-grey: #999 !default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: #444 !default;
+$dark-grey: #686a72 !default;
+
+
+/// hover
+$hover-brand: #d93124 !default;
+$hover-light-blue: #2c4a74 !default;
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

@@ -1,5 +1,134 @@
-//main: ../main.scss
 
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+header {
+
+    .top-nav {
+        .top-nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            ul {
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding-right: 25px;
+
+                    a {
+                        color: $brand-color;
+                        font-family: $font-montserrat-bold;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        padding-bottom: 25px;
+
+        .nav-item {
+
+            .nav-link {
+                padding-right: 15px;
+                margin-right: 16px;
+                font-family: $font-montserrat-semibold;
+                font-size: 14px;
+                list-style: 24px;
+                color: $title-color;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: $brand-color;
+                    font-family: $font-montserrat-bold;
+                    transition: all 0.3s;
+                }
+
+                &::before {
+                    display: block;
+                    content: attr(title);
+                    font-family: $font-montserrat-bold;
+                    height: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                }
+            }
+
+            a.btn {
+                font-size: 14px;
+                padding: 8px 40px 8px 16px;
+                border-radius: 8px;
+
+                &:after {
+                    width: 19px;
+                    height: 11px;
+                }
+            }
+
+            &.nav-btn {
+                margin-left: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .toggle-arrow {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border: none ;
+
+                    width: 8px;
+                    height: 5px;
+                    background-image: url('../assets/images/menu-dropdown.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            
+        }
+    }
+}
+
+@media (min-width: 768px) {
+  
+    .dropdown {
+      
+      &:hover {
+        
+        > .dropdown-menu {
+          display: block;
+        }
+      }
+      
+      .dropdown-toggle {
+        
+        &::after {
+          display: none;
+        }
+        
+        &:active {
+          pointer-events: none;
+        }
+      }
+    }
+  }
