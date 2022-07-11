@@ -1,0 +1,132 @@
+.meet-the-team-section {
+  padding: 40px 0;
+
+  @media (min-width: 768px) {
+    padding: 80px 0;
+  }
+
+  .team-holder {
+    margin-top: 50px;
+
+    @media (min-width: 768px) {
+      margin-top: 100px;
+    }
+  }
+
+  .agent-wrapper {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: initial;
+      }
+
+      &:not(:nth-child(-n + 2)) {
+        margin-top: 50px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      max-width: 28%;
+
+      &:not(:nth-child(-n + 2)) {
+        margin-top: initial;
+      }
+
+      &:not(:nth-child(-n + 3)) {
+        margin-top: 100px;
+      }
+
+      &:not(:nth-child(3n + 1)) {
+        margin-left: 8%;
+      }
+    }
+
+    .agent-img-holder {
+      position: relative;
+      display: block;
+      margin: 0 auto 20px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: red;
+      overflow: hidden;
+
+      .agent-img-wrapper {
+        position: absolute;
+        display: block;
+        width: 80%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+          max-width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &:nth-child(3n + 1) {
+      .agent-img-holder {
+        background-color: $brand-color;
+
+        .agent-img-wrapper {
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &:nth-child(3n + 2) {
+      .agent-img-holder {
+        background-color: $brand-light-blue;
+
+        .agent-img-wrapper {
+          top: 4px;
+          right: 8px;
+        }
+      }
+    }
+
+    &:nth-child(3n + 3) {
+      .agent-img-holder {
+        background-color: $brand-dark-blue;
+
+        .agent-img-wrapper {
+          top: 18px;
+          left: 0px;
+        }
+      }
+    }
+  }
+
+  .agent-details {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .agent-desc {
+    margin-bottom: 10px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .agent-contact {
+    img {
+      width: 32px;
+    }
+  }
+}
