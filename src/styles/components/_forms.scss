@@ -15,7 +15,6 @@ textarea.form-control {
     
     &::-webkit-input-placeholder { 
         color: $semi-mid-grey;
-        font-family: $font-montserrat-semibold;
     }
 
     &:-ms-input-placeholder {
@@ -24,20 +23,73 @@ textarea.form-control {
 
     &::placeholder {
         color: $semi-mid-grey;
-    }
-
-    &:not([size]):not([multiple]){
-        height: calc(3.25rem + 2px);
         font-family: $font-montserrat-semibold;
     }
 }
-select.form-control{    
-    color: $semi-mid-grey;
+
+.select-container{
+    position:relative;
+
+    &:before{
+        content:url($base-url + 'images/select-dropdown.png');
+        position:absolute;
+        top:50%;
+        right:15px;
+        transform:translate(0, -50%);
+    }
+    
+    select {
+        height: calc(3rem + 2px)!important;
+        color: $semi-mid-grey;
+        font-family: $font-montserrat-semibold;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
 }
 
 label{
-    color: $mid-grey;
-    font-family: $font-montserrat-semibold;
-    display:flex;
-    align-items:center;
+    &.checkbox{
+        font-family: $font-montserrat-semibold;
+        font-size: 14px;
+        color: $semi-mid-grey;
+        cursor:pointer;
+        
+        span{
+            position:relative;
+            padding-left:27px;
+            
+            &:before{
+                content:'';
+                position:absolute;
+                left:0;
+                top:8px;
+                margin-bottom:-10px;
+                width:17px;
+                height:17px;
+                border:1px solid #cecece;
+
+                @media(max-width:767px){
+                    top:6px;
+                }
+            }
+            &:after{
+                content:'';
+            }
+        }
+        input{
+            display:none;
+            
+            &:checked ~ span{
+
+                &:after{
+                    position:absolute;
+                    top:2px;
+                    left:1px;
+                    content:url($base-url + 'images/check-sm.png');
+                }
+            }
+        }
+    }
 }

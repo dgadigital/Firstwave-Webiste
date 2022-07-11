@@ -17,12 +17,13 @@
   'base/base',
   'base/fonts',
   'base/typography',
-  'base/helpers',
-  'base/backgrounds';
+  'base/helpers';
 
 // 4. Layout-related sections
 @import
-  'sections/page-banner';
+  'sections/page-banner',
+  'sections/page-cta',
+  'sections/page-image-list';
 
 // 4. Layout-related sections
 @import

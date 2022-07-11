@@ -145,3 +145,29 @@ input[type="text"] {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
 }
+
+// Backgrounds
+.bg-dark-blue{
+  background-color: $brand-dark-blue;
+}
+
+//Shadows
+.shadow{  
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+.shadow-bottom{
+  box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.15);
+}
+
+//Borders
+.border,
+.border-top,
+.border-bottom,
+.border-left,
+.border-right{
+  border-color: $dark-mid-grey!important;
+}
+
+.rounded{
+  border-radius: 10px!important;
+}
