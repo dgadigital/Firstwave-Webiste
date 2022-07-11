@@ -23,7 +23,8 @@
 @import
   'sections/page-banner',
   'sections/page-cta',
-  'sections/page-image-list';
+  'sections/page-image-list',
+  'sections/page-3-columns';
 
 // 4. Layout-related sections
 @import
@@ -33,7 +34,8 @@
 // 5. Components
 @import
   'components/buttons',
-  'components/forms';
+  'components/forms',
+  'components/modals';
 
 // 6. Page-specific styles
 @import
