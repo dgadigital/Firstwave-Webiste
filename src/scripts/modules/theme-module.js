@@ -32,31 +32,23 @@ AppName.Modules.ThemeModule = (function () {
 
     });
 
-  }
 
-  var _footerMenu = () => {
+    $('.next-stage').each(function(){
+      $(this).click(function() {
+        $('.drop-menu').removeClass('show');
+        $(this).siblings('.drop-menu').addClass('show');      
+      });
+    });
 
+    $('.next-stage-inner').each(function(){
 
-    $(".footer-menu-item.with-inner").each(function(){
+      $(this).click(function() {
 
-        $(this).hover(function() {
+        var label = $(this).siblings('.with-inner-list').attr("data-label");
 
-          $('.footer-menu-inner').hide();
-          $(this).children('.footer-menu-inner').show();
-          
+        $('.drop-menu-list-inner').find('#' + label).addClass('show');
 
-          // var label = $(this).attr("data-label");
-
-          // $('.with-inner-list').removeClass('active');
-          // $(this).addClass('active');
-
-
-          // $('.drop-menu-list-inner').find('#' + label).siblings().hide();
-          // $('.drop-menu-list-inner').find('#' + label).show();
-
-        }, function() {
-          $(this).children('.footer-menu-inner').hide();
-        });
+      });
 
     });
 
@@ -68,7 +60,6 @@ AppName.Modules.ThemeModule = (function () {
   const init = function () {
     _privateMethod();
     _megaMenu();
-    // _footerMenu();
   };
 
   return {
