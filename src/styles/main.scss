@@ -13,8 +13,8 @@
 // 4. Layout-related sections
 @import 'sections/page-banner', 'sections/page-cta', 'sections/page-image-list',
   'sections/page-3-columns', 'sections/page-job-listing',
-  'sections/page-pagination', 'sections/home-banner',
-  'sections/accordion-faq-section', 'sections/meet-the-team';
+  'sections/page-pagination', 'sections/home-banner', 'sections/page-faq',
+  'sections/page-meet-the-team';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
@@ -23,7 +23,7 @@
 @import 'components/buttons', 'components/forms', 'components/modals';
 
 // 6. Page-specific styles
-@import 'pages/home', 'pages/investor';
+@import 'pages/investor';
 
 // 7. Themes
 @import 'themes/default';
