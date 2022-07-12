@@ -28,7 +28,8 @@ h1,
   }
 }
 
-h2, h3 {
+h2, h3,
+.h2, .h3 {
   font-size: 50px;
   line-height: 60px;
   color: $title-color;
@@ -44,7 +45,8 @@ h2, h3 {
   }
 }
 
-h4{
+h4,
+.h4{
   strong{    
     font-family: $font-montserrat-bold;
   }  

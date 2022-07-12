@@ -1,0 +1,9 @@
+.section-job-listing{
+    .job-post{
+        &:not(:last-child){
+            .job-content{
+                border-bottom:1px solid #9C9C9C;
+            }
+        }
+    }
+}
