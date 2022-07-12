@@ -28,8 +28,10 @@ h1,
   }
 }
 
-h2, h3,
-.h2, .h3 {
+h2,
+h3,
+.h2,
+.h3 {
   font-size: 50px;
   line-height: 60px;
   color: $title-color;
@@ -46,61 +48,62 @@ h2, h3,
 }
 
 h4,
-.h4{
-  strong{    
+.h4 {
+  strong {
     font-family: $font-montserrat-bold;
-  }  
+  }
 }
 
 //Font Style
-.text-underline{
-  text-decoration:underline;
+.text-underline {
+  text-decoration: underline;
 }
 
 //Font Weight
-.font-bold{
+b,
+.font-bold {
   font-family: $font-montserrat-bold;
 }
-.font-semi-bold{
+.font-semi-bold {
   font-family: $font-montserrat-semibold;
 }
 
 //Text Colors
-.text-yellow{
+.text-yellow {
   color: $yellow;
 }
-.text-orange{
+.text-orange {
   color: $brand-color;
 }
-.text-black{
+.text-black {
   color: black;
 }
 
 //Line Heights
-.line-height-1{
-  line-height:1rem;
+.line-height-1 {
+  line-height: 1rem;
 }
-.line-height-2{
-  line-height:1.5rem;
+.line-height-2 {
+  line-height: 1.5rem;
 }
-.line-height-3{
-  line-height:1.75rem;
+.line-height-3 {
+  line-height: 1.75rem;
 }
 
 //List
-ul.list-check{
+ul.list-check {
   padding-left: 0;
   list-style: none;
-  
-  li{
-      position:relative;
-      padding-left: 1.75rem;
-      
-      &:before{
-          content:url($base-url + 'images/check.png');
-          position:absolute;
-          top:0;
-          left:0;
-      }
+
+  li {
+    position: relative;
+    padding-left: 1.75rem;
+
+    &:before {
+      content: url($base-url + 'images/check.png');
+      position: absolute;
+      top: 0;
+      left: 0;
     }
+  }
 }
