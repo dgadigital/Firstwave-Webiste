@@ -62,12 +62,85 @@ AppName.Modules.ThemeModule = (function () {
 
   }
 
+  
+
+
+  var _slickSliders = () => {
+
+    $('.blog-post-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+  }
+  var _blogpostElements = () => {
+
+    function setmaxHeight(){
+      $('.blog-post-slider').each(function(){    
+        var blogTitle = 0;  
+        var blogExcerpt = 0;
+
+        $('.blog-post-slider article .post-title').css( {
+          'min-height': '0'
+        });
+
+        $('.blog-post-slider article .post-excerpt').css( {
+            'min-height': '0'
+        });  
+  
+        $('article .post-title', this).each(function(){
+          if($(this).height() > blogTitle) {
+            blogTitle = $(this).height(); 
+          }
+        
+        });  
+  
+        $('article .post-excerpt', this).each(function(){
+          if($(this).height() > blogExcerpt) {
+            blogExcerpt = $(this).height(); 
+          }
+        
+        });  
+
+        
+        $('.blog-post-slider article .post-title').css( {
+            'min-height': blogTitle
+        });
+
+        $('.blog-post-slider article .post-excerpt').css( {
+            'min-height': blogExcerpt
+        });     
+
+      });   
+    }
+      
+    setmaxHeight();
+
+    window.onresize = function(event) {
+      setmaxHeight();
+  };
+
+  }
+
   /////////////////////
   // Public Methods //
   ///////////////////
   const init = function () {
     _privateMethod();
     _megaMenu();
+    _slickSliders();
+    _blogpostElements();
     // _footerMenu();
   };
 
