@@ -22,7 +22,8 @@
 
 // 4. Layout-related sections
 @import
-  'sections/page-banner';
+  'sections/page-banner',
+  'sections/home-banner';
 
 // 4. Layout-related sections
 @import
@@ -33,10 +34,6 @@
 @import
   'components/buttons',
   'components/forms';
-
-// 6. Page-specific styles
-@import
-  'pages/home';
 
 // 7. Themes
 @import
