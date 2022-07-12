@@ -183,3 +183,10 @@ input[type="text"] {
 .border-orange{
   border-color: $brand-color!important;
 }
+
+u.custom-underline {
+  padding-top: 0;
+  text-shadow: -2px -2px #fff, -2px 2px #fff, 2px -2px #fff, 2px 2px #fff;
+  text-decoration: none;
+  border-bottom: 3px solid #000;
+}
