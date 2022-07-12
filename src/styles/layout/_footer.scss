@@ -5,7 +5,7 @@ footer {
         display: block;
 
         @media (max-width: 767px){
-            display: none;
+            display: none; 
         }
     }
 
@@ -260,9 +260,63 @@ footer {
 
     .footer-mobile {
         display: none;
+        background-color: $brand-dark-blue;
+        color: #fff;
 
         @media (max-width: 767px){
             display: block;
+        }
+
+        .container {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .footer-mobile-top {
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                font-family: $font-montserrat-semibold;
+            }
+
+            .form-control {
+                margin-bottom: 20px;
+            }
+
+            .socials-mobile {
+                padding-top: 25px;
+                padding-bottom: 40px;
+
+                img {
+                    padding-right: 10px;
+                }
+            }
+
+            .footer-mobile-copyright {
+                margin: 0;
+                max-width: 80%;
+                font-size: 12px;
+                line-height: 20px;
+                font-family: $font-montserrat-light;
+
+                a {
+                    padding-right: 10px;
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-mobile-bottom {
+            text-align: center;
+            background-color: $brand-color;
+
+            a:hover {
+                background-color: $brand-color
+            }
         }
     }
 }

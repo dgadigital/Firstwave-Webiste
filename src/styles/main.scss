@@ -27,7 +27,8 @@
   'sections/page-image-list',
   'sections/page-3-columns',
   'sections/page-job-listing',
-  'sections/page-pagination';
+  'sections/page-pagination',
+  'sections/home-banner';
 
 // 4. Layout-related sections
 @import
@@ -39,10 +40,6 @@
   'components/buttons',
   'components/forms',
   'components/modals';
-
-// 6. Page-specific styles
-@import
-  'pages/home';
 
 // 7. Themes
 @import

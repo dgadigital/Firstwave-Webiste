@@ -49,6 +49,18 @@ textarea.form-control {
     }
 }
 
+input.search-field {
+    padding: 12.5px 10px 12.5px 45px;
+    background-image: url('../assets/images/search-icon-field.png');
+    background-position: 13px;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+select.form-control{    
+    color: $semi-mid-grey;
+}
+
 label{
     &.checkbox{
         font-family: $font-montserrat-semibold;
