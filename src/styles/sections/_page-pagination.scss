@@ -37,21 +37,21 @@
             }
             &.prev{
                 &:before{
-                    content:url($base-url + '/images/prev-icon.png');
+                    content:url('../assets/images/prev-icon.png');
                     margin-right:0.75rem;
                 }
                 &.disabled:before{
-                    content:url($base-url + '/images/prev-icon-disabled.png');
+                    content:url('../assets/images/prev-icon-disabled.png');
                     margin-right:0.75rem;
                 }
             }
             &.next{
                 &:after{
-                    content:url($base-url + '/images/next-icon.png');
+                    content:url('../assets/images/next-icon.png');
                     margin-left:0.75rem;
                 }
                 &.disabled:after{
-                    content:url($base-url + '/images/next-icon-disabled.png');
+                    content:url('../assets/images/next-icon-disabled.png');
                     margin-left:0.75rem;
                 }
             }

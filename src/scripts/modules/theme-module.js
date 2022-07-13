@@ -110,6 +110,10 @@ AppName.Modules.ThemeModule = (function () {
       speed: 300,
       slidesToShow: 2,
       adaptiveHeight: true,
+      // touchMove: true,
+      // swipe: true,
+      prevArrow: '<img src="../assets/images/prev-slider-icon.png" class="img-fluid slick-prev">',
+      nextArrow: '<img src="../assets/images/next-slider-icon.png" class="img-fluid slick-next">',
       responsive: [
         {
           breakpoint: 767,

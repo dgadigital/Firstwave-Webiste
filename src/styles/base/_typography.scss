@@ -100,7 +100,7 @@ ul.list-check {
     padding-left: 1.75rem;
 
     &:before {
-      content: url($base-url + 'images/check.png');
+      content: url('../assets/images/check.png');
       position: absolute;
       top: 0;
       left: 0;
