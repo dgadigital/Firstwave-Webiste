@@ -16,15 +16,16 @@
   'sections/page-pagination', 'sections/home-banner',
   'sections/page-investor-desc', 'sections/page-faq',
   'sections/page-meet-the-team', 'sections/page-investor-graph',
-  'sections/page-subscribe', 'sections/page-tabs-resources';
+  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/buttons', 'components/forms', 'components/modals';
+@import 'components/buttons', 'components/forms', 'components/modals', 'components/slick-slider-blog-post';
 
 // 6. Page-specific styles
+@import 'pages/careers';
 
 // 7. Themes
 @import 'themes/default';

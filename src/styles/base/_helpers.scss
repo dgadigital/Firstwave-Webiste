@@ -34,12 +34,12 @@
 }
 
 //For Overlapping Content
-.overlap-155{
+.overlap-152{
   @media(min-width:768px){
-      margin-bottom:-155px;
+      margin-bottom:-152px;
       
       & + *{
-          padding-top:155px;
+          padding-top:152px;
       }
   }
 }

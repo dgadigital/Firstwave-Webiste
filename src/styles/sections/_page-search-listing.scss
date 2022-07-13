@@ -1,0 +1,15 @@
+.section-search-listing{
+    .search-post{
+        &:not(:last-child){
+            .search-content{
+                border-bottom:1px solid #9C9C9C;
+            }
+        }
+
+        &:last-child{
+            .search-cta{
+                margin-bottom:0!important;
+            }
+        }
+    }
+}
