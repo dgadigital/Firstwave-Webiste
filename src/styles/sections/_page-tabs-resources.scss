@@ -14,6 +14,7 @@
 
     .tabs-holder {
       position: relative;
+      z-index: 3;
       margin-bottom: 20px;
       width: 100%;
 
@@ -42,14 +43,14 @@
         }
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           top: 50%;
           right: 10px;
           transform: translateY(-50%);
           width: 24px;
           height: 14px;
-          background-image: url("../assets/images/inverted-arrow-link.svg");
+          background-image: url('../assets/images/inverted-arrow-link.svg');
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -69,7 +70,7 @@
           overflow: hidden;
 
           &::after {
-            content: "";
+            content: '';
             position: absolute;
             top: 16px;
             right: 16px;
@@ -132,7 +133,6 @@
 
     .tabs-content-holder {
       width: 100%;
-      height: 700px;
       box-shadow: 0px 18px 27px 0px rgba(0, 0, 0, 0.12);
 
       @media (min-width: 992px) {
@@ -142,9 +142,285 @@
     }
 
     .tab-content {
-      padding: 40px;
-      width: 100%;
-      height: 100%;
+      @media (min-width: 992px) {
+        height: 100%;
+      }
     }
+
+    .tab-pane {
+      padding: 40px 10px 20px;
+
+      @media (min-width: 992px) {
+        overflow: hidden;
+        height: 100%;
+      }
+    }
+
+    .content-wrapper {
+      h1 {
+        margin-bottom: 40px;
+      }
+
+      @media (min-width: 992px) {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #d8d8d8;
+          border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $brand-color;
+          border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .annual-reports-wrapper {
+      padding: 0 0 40px;
+
+      @media (min-width: 576px) {
+        padding: 5px 30px 40px;
+      }
+
+      .row {
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
+      }
+
+      .col {
+        @media (max-width: 767px) {
+          max-width: 300px;
+
+          &:not(:first-child) {
+            margin-top: 40px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          &:nth-child(n + 3) {
+            margin-top: 60px;
+          }
+        }
+
+        a {
+          position: relative;
+          display: block;
+          padding-left: 80px;
+
+          p {
+            &:first-child {
+              position: relative;
+              margin-bottom: 5px;
+
+              .icon-arrow {
+                margin-left: 12px;
+                margin-bottom: 5px;
+              }
+            }
+
+            &:nth-child(2) {
+              margin-right: 5px;
+            }
+
+            &:not(:first-child) {
+              margin-bottom: 0;
+            }
+          }
+
+          .img-reports {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 60px;
+            box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+
+    .videos-wrapper {
+      margin: 0 auto;
+      padding: 0 20px 20px;
+      max-width: 610px;
+
+      .row {
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
+      }
+
+      .col {
+        @media (max-width: 767px) {
+          max-width: 270px;
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          &:nth-child(n + 3) {
+            margin-top: 30px;
+          }
+        }
+      }
+
+      .video-holder {
+        position: relative;
+        display: block;
+        padding-top: 56.3%;
+        cursor: pointer;
+
+        img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .presentations-wrapper {
+      display: block;
+      margin: 0 auto;
+      padding: 0 20px 20px;
+      max-width: 580px;
+
+      .presentation-item {
+        position: relative;
+        display: block;
+
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+
+        @media (min-width: 576px) {
+          padding-left: 156px;
+        }
+
+        a {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          z-index: 2;
+        }
+      }
+
+      .img-holder {
+        @media (max-width: 575px) {
+          display: block;
+          margin: 0 auto 20px;
+          max-width: 136px;
+        }
+
+        @media (min-width: 576px) {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 136px;
+        }
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .text-holder {
+        .heading {
+          margin-bottom: 10px;
+        }
+
+        .sub-heading {
+          margin-bottom: 0;
+
+          & * {
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          & > :last-child {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+
+    .governance-wrapper {
+      padding: 0 30px;
+
+      .governance-desc {
+        margin-bottom: 40px;
+
+        p {
+          margin-bottom: 0;
+          font-size: 14px;
+        }
+
+        a {
+          font-size: 14px;
+          text-decoration: underline;
+        }
+      }
+
+      .policies-holder {
+        a {
+          position: relative;
+          display: block;
+          padding-right: 44px;
+          font-family: $font-montserrat-bold;
+
+          &:not(:last-child) {
+            margin-bottom: 25px;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: 0;
+            width: 24px;
+            height: 14px;
+            background-image: url('../assets/images/arrow-link.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.video-modal {
+  .modal-dialog {
+    max-width: 590px;
+  }
+
+  .modal-content {
+    padding-top: 56%;
+    background-color: transparent;
+    border: none;
   }
 }
