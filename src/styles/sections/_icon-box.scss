@@ -1,0 +1,134 @@
+.icon-box {
+    position: relative;
+
+
+    &.bg-grey-bottom {
+        &:after {
+            content: '';
+            width: 100%;
+            height: 55%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: $light-grey2;
+            z-index: -2;
+        }
+    }
+
+    &.bg-grey-top {
+        &:after {
+            content: '';
+            width: 100%;
+            height: 55%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: $light-grey2;
+            z-index: -2;
+        }
+    }
+
+
+    .container {
+        max-width: 1190px;
+
+        .content-box-wrapper {
+            position: relative;
+            padding: 35px;
+
+            @media (max-width: 767px) {
+                padding: 20px 20px;
+            }
+            
+            .red-circle {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+            }
+
+            .blue-circle {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
+
+        .row {
+            max-width: 920px;
+            margin: 0 auto;
+
+            @media (max-width: 767px) {
+                padding-top: 32px;
+            }
+
+            .item {
+                @media (max-width: 767px) {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .row-icon-with-text {
+            padding-top: 50px;
+        }
+
+        .row-icon-only {
+            padding-top: 30px;
+            justify-content: center;
+            align-items: center;
+
+            .award-item {
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-bottom: 5px;
+            }
+        }
+
+
+        .content-box {
+            padding: 35px;
+            box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.12);
+            background-color: #fff;
+
+            @media (max-width: 767px) {
+                padding: 35px 20px;
+            }
+
+            .image-holder {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100px;
+            }
+
+            .text-content {
+                max-width: 260px;
+                padding-top: 25px;
+                margin: 0 auto;
+
+                p {
+                    font-size: 24px;
+                    line-height: 26px;
+
+                    @media (max-width: 991px) {
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
+
+                    strong {
+                        font-family: $font-montserrat-bold;
+                    }
+                }
+            }
+
+            .arrow-link {
+                display: inline-block;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}

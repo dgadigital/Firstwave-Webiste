@@ -1,0 +1,79 @@
+.solutions {
+    background-color: $light-grey2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .title-holder {
+        padding-bottom: 60px;
+
+        h3 {
+            max-width: 580px;
+            margin: 0 auto;
+        }
+    }
+
+    .solution-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .solution-item-slider{
+        width: 58%;
+        padding-right: 80px;
+        
+        .testimonials-box {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 25px;
+
+
+            .testimonials-box-item {
+
+                .ratings {
+                    margin-top: 10px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+    .solution-item-text {
+        width: 42%;
+
+
+        .text-item {
+            display: flex;
+            padding-top: 20px;
+
+            .icon {
+                padding-right: 20px;
+                width: 76px;
+            }
+
+            .text {
+                width: 80%;
+            }
+
+            .title {
+                margin: 0;
+                font-family: $font-montserrat-bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: $semi-mid-grey2;
+            }
+    
+            p {
+                line-height: 22px;
+                color: $semi-mid-grey2;
+            }
+        }
+
+        p {
+            margin-bottom: 8px;
+            line-height: 26px;
+        }
+
+    }
+
+}
