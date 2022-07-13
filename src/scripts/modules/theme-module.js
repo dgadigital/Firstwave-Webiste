@@ -112,8 +112,10 @@ AppName.Modules.ThemeModule = (function () {
       adaptiveHeight: true,
       // touchMove: true,
       // swipe: true,
-      prevArrow: '<img src="../assets/images/prev-slider-icon.png" class="img-fluid slick-prev">',
-      nextArrow: '<img src="../assets/images/next-slider-icon.png" class="img-fluid slick-next">',
+      prevArrow:
+        '<img src="../assets/images/prev-slider-icon.png" class="img-fluid slick-prev">',
+      nextArrow:
+        '<img src="../assets/images/next-slider-icon.png" class="img-fluid slick-next">',
       responsive: [
         {
           breakpoint: 767,
@@ -185,6 +187,21 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
 
+  var _modalVideo = () => {
+    var $videoSrc;
+    $('.video-btn').click(function () {
+      $videoSrc = $(this).data('src');
+    });
+
+    $('#videoModal').on('shown.bs.modal', function (e) {
+      $('#video').attr('src', $videoSrc + '?autoplay=1');
+    });
+
+    $('#videoModal').on('hide.bs.modal', function (e) {
+      $('#video').attr('src', $videoSrc);
+    });
+  };
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -192,6 +209,7 @@ AppName.Modules.ThemeModule = (function () {
     _privateMethod();
     _megaMenu();
     _tabsResources();
+    _modalVideo();
     _slickSliders();
     _blogpostElements();
     // _footerMenu();
