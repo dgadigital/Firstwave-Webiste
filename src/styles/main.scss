@@ -12,11 +12,10 @@
 
 // 4. Layout-related sections
 @import 'sections/page-banner', 'sections/page-cta', 'sections/page-image-list',
-  'sections/page-3-columns', 'sections/page-job-listing',
-  'sections/page-pagination', 'sections/home-banner', 'sections/page-faq',
+  'sections/page-3-columns', 'sections/page-job-listing', 'sections/page-pagination', 'sections/home-banner', 'sections/page-faq',
   'sections/page-meet-the-team', 'sections/icon-box', 'sections/column-2-showcase', 'sections/solution',
   'sections/page-investor-desc', 'sections/page-investor-graph','sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing',
-  'sections/interactive-component';
+  'sections/interactive-component', 'sections/page-search-intro', 'sections/widget-form', 'sections/widget-recent-posts', 'sections/widget-up-date', 'sections/widget-social-icons';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
@@ -25,7 +24,9 @@
 @import 'components/buttons', 'components/forms', 'components/modals', 'components/slick-slider-blog-post';
 
 // 6. Page-specific styles
-@import 'pages/careers';
+@import 'pages/careers', 'pages/single-post';
+
+
 
 // 7. Themes
 @import 'themes/default';
