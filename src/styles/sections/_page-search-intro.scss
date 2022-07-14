@@ -1,0 +1,21 @@
+.section-search-intro{
+    .row{
+        .col-2{
+            max-width:190px;
+            flex-basis:190px;
+        }
+        .col-10{
+            position:relative;
+            max-width:calc(100% - 190px);
+            flex-basis:calc(100% - 190px);
+            
+            .icon-search{
+                position:absolute;
+                transform:translate(0, -50%);
+                top:50%;
+                left:30px;
+            }
+            
+        }
+    }
+}

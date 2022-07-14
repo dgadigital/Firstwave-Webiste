@@ -16,8 +16,12 @@
   'sections/page-pagination', 'sections/home-banner',
   'sections/page-investor-desc', 'sections/page-faq',
   'sections/page-meet-the-team', 'sections/page-investor-graph',
-  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing', 
+<<<<<<< HEAD
+  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing', 'sections/page-search-intro';
   'sections/widget-form', 'sections/widget-recent-posts', 'sections/widget-up-date', 'sections/widget-social-icons';
+=======
+  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing', 'sections/page-search-intro';
+>>>>>>> origin/gh-sddev
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
