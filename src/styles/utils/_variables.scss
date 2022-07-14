@@ -32,18 +32,35 @@ $brand-color: #e63e31 !default;
 $brand-dark-blue: #1f284f !default;
 $brand-light-blue: #3a6097 !default;
 
-/// Light greyc
+/// Light grey
 /// @type Color
 $light-grey: #F3F2F2 !default;
+
+/// Light grey2
+/// @type Color
+$light-grey2: #F6F6F6 !default;
+/// Semi grey
+$semi-light-grey: #E2E2E2 !default;
+
+/// Semi Mid grey
+/// @type Color
+$semi-mid-grey: #CECECE !default;
 
 /// Medium grey
 /// @type Color
 $mid-grey: #999 !default;
 
+/// Dark medium grey
+/// @type Color
+$dark-mid-grey: #CCCCCC !default;
+
 /// Dark grey
 /// @type Color
 $dark-grey: #686a72 !default;
 
+/// Yellow
+/// @type Color
+$yellow : #FFC947 !default;
 
 /// hover
 $hover-brand: #d93124 !default;

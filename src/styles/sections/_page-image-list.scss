@@ -1,0 +1,10 @@
+.section-image-list{
+    &.image-no-slider{
+        .col{
+            @media(max-width:767px){
+                max-width:calc(100% / 4);
+                flex-basis:calc(100% / 4);
+            }
+        }
+    }    
+}

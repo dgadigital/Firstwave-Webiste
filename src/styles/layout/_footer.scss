@@ -1,5 +1,322 @@
-//main: ../main.scss
+footer {
+    padding-top: 40px;
 
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+    .footer-desktop {
+        display: block;
+
+        @media (max-width: 767px){
+            display: none; 
+        }
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            width: 160px;
+            max-width: 100%;
+        }
+
+        .search {
+            width: 50%;
+
+            input.form-control {
+                padding: 13px 15px 13px 45px;
+            }
+        }
+    }
+
+
+    .footer-widgets {
+        padding-top: 22px;
+
+        .widgets-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .widget-area-1 {
+                width: 12%;
+            }
+
+            .widget-area-2 {
+                width: 19%;
+            }
+
+            .widget-area-3 {
+                width: 14%;
+            }
+
+            .widget-area-4 {
+                width: 14%;
+            }
+
+            .widget-area-5 {
+                width: 13%;
+            }
+
+            .widget-area-6 {
+                width: 15%;
+            }
+
+            .widgets-item {
+                padding-right: 10px;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                @media (max-width: 991px){
+                    width: 28%;
+                    padding-bottom: 20px;
+                }
+
+                .title {
+                    margin-bottom: 0;
+                    font-size: 11px;
+                    line-height: 24px;
+                    font-family: $font-montserrat-medium;
+                }
+
+                .footer-menu,
+                .footer-menu-inner {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+
+                    li {
+                        font-size: 11px;
+                        line-height: 24px;
+                        font-family: $font-montserrat;
+
+                        a {
+                            color: $text-color;
+                        }
+
+                        
+                        &:hover > a{
+                            color: $brand-color;
+                            font-family: $font-montserrat-medium;
+                        }
+                    }
+                }
+
+                .with-inner {
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 10px;
+                        display: block;
+                        width: 8px;
+                        height: 4.6px;
+                        background-image: url('../assets/images/footer-dropdown.png');
+                        background-position: center;
+                        background-size: auto;
+                        background-repeat: no-repeat;
+                    }
+
+                    &:hover {
+                        .footer-menu-inner {
+                            display: block;
+                        }
+                    }
+                }
+
+                .footer-menu-inner {
+                    display: none;
+                    padding-left: 16px;
+                    list-style-type: circle;
+                }
+
+                .socials-wrapper {
+
+                    .login-footer {
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin-bottom: 16px;
+                        font-family: $font-montserrat-bold;
+                    }
+
+                    .socials {
+                        padding-top: 10px;
+
+                        img {
+                            padding-right: 7px;
+                        }
+                    }
+                }
+
+                .btn {
+                    padding: 13px 18px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+    .subscribe {
+        padding-top: 20px;
+        padding-bottom: 35px;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: $font-montserrat-bold;
+        }
+
+        .row-subscribe {
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            width: 52%;
+        }
+
+        .form {
+            width: 48%;
+
+            .form-row {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+
+                .field {
+                    width: 60%;
+
+                    input.form-control {
+                        padding: 13px 15px;
+                    }
+                }
+
+                .submit {
+                    width: 36%;
+
+                    .btn {
+                        padding: 13px 13px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer-ribbon {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: $brand-dark-blue;
+
+        .row {
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+        }
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: $font-montserrat-bold;
+
+            @media (max-width: 991px) {
+                padding-bottom: 20px;
+            }
+        }
+
+        .btn.btn-arrow {
+            margin-left: 20px;
+            padding: 12px 55px 12px 30px;
+        }
+    }
+
+    .copyright {
+        p {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 24px;
+
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+
+            a {
+                color: $title-color;
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    .footer-mobile {
+        display: none;
+        background-color: $brand-dark-blue;
+        color: #fff;
+
+        @media (max-width: 767px){
+            display: block;
+        }
+
+        .container {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .footer-mobile-top {
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                font-family: $font-montserrat-semibold;
+            }
+
+            .form-control {
+                margin-bottom: 20px;
+            }
+
+            .socials-mobile {
+                padding-top: 25px;
+                padding-bottom: 40px;
+
+                img {
+                    padding-right: 10px;
+                }
+            }
+
+            .footer-mobile-copyright {
+                margin: 0;
+                max-width: 80%;
+                font-size: 12px;
+                line-height: 20px;
+                font-family: $font-montserrat-light;
+
+                a {
+                    padding-right: 10px;
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-mobile-bottom {
+            text-align: center;
+            background-color: $brand-color;
+
+            a:hover {
+                background-color: $brand-color
+            }
+        }
+    }
+}

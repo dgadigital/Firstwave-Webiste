@@ -1,9 +1,9 @@
 input.form-control,
 select.form-control,
 textarea.form-control {
+    padding: 12.5px 10px;
     font-size: 14px;
-    padding: 15px 15px;
-    border: 2px solid #d8d9dd;
+    border: 2px solid $semi-mid-grey;
     border-radius: 10px;
 
     &:focus,
@@ -12,19 +12,96 @@ textarea.form-control {
         color: #969191;
         box-shadow: none;
     }
-
     
     &::-webkit-input-placeholder { 
-        color: #d8d9dd;
-        font-family: $font-montserrat-semibold;
+        color: $semi-mid-grey;
     }
 
     &:-ms-input-placeholder {
-        color: #d8d9dd;
+        color: $semi-mid-grey;
     }
 
     &::placeholder {
-        color: #d8d9dd;
+        color: $semi-mid-grey;
+        font-family: $font-montserrat-semibold;
     }
+}
 
+.select-container{
+    position:relative;
+
+    &:before{
+        content:url('../assets/images/select-dropdown.png');
+        position:absolute;
+        top:50%;
+        right:15px;
+        transform:translate(0, -50%);
+    }
+    
+    select {
+        height: calc(3rem + 2px)!important;
+        color: $semi-mid-grey;
+        font-family: $font-montserrat-semibold;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+}
+
+input.search-field {
+    padding: 12.5px 10px 12.5px 45px;
+    background-image: url('../assets/images/search-icon-field.png');
+    background-position: 13px;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+select.form-control{    
+    color: $semi-mid-grey;
+}
+
+label{
+    &.checkbox{
+        font-family: $font-montserrat-semibold;
+        font-size: 14px;
+        color: $semi-mid-grey;
+        cursor:pointer;
+        
+        span{
+            position:relative;
+            padding-left:27px;
+            
+            &:before{
+                content:'';
+                position:absolute;
+                left:0;
+                top:8px;
+                margin-bottom:-10px;
+                width:17px;
+                height:17px;
+                border:1px solid #cecece;
+
+                @media(max-width:767px){
+                    top:6px;
+                }
+            }
+            &:after{
+                content:'';
+            }
+        }
+        input{
+            display:none;
+            
+            &:checked ~ span{
+
+                &:after{
+                    position:absolute;
+                    top:2px;
+                    left:1px;
+                    content:url('../assets/images/check-sm.png');
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,33 @@
+.section-3-columns{
+    .col-md-4{
+        .image,
+        .content{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+        
+        .image{
+            min-height:152px;
+            
+            @media(max-width:767px){
+                min-height:1px;
+            }
+            
+            img{
+                max-width:250px;
+            }
+        }
+        .content{
+            min-height:115px;
+            
+            @media(max-width:767px){
+                min-height:1px;
+            }
+            
+            h4{
+                margin-bottom:0;
+            }
+        }
+    }
+}

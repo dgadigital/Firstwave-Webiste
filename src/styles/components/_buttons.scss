@@ -67,6 +67,16 @@
             transition: all 0.3s;
         }
     }
+
+    &.btn-lg{
+        font-size:18px;
+        padding-top:12px;
+        padding-bottom:12px;
+
+        @media(max-width:767px){
+            font-size:14px;
+        }
+    }
 }
 
 .arrow-link {

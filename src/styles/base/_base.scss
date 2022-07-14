@@ -28,6 +28,11 @@ a {
   }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /**
  * Basic styles for input fields
  */
@@ -144,4 +149,45 @@ input[type="text"] {
 .slideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
+}
+
+// Backgrounds
+.bg-dark-blue{
+  background-color: $brand-dark-blue;
+}
+.bg-light-grey2{
+  background-color: $light-grey2;
+}
+.bg-light-grey2{
+  background-color: $light-grey2;
+}
+
+//Linear Gradient
+.linear-gradient-grey2{
+  background-image: linear-gradient(to bottom, rgba(214, 214, 214, 0.47) 4%, rgba(251, 251, 251, 0.47) 43%);
+}
+
+//Shadows
+.shadow{  
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+.shadow-bottom{
+  box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.15);
+}
+
+//Borders
+.border,
+.border-top,
+.border-bottom,
+.border-left,
+.border-right{
+  border-color: $dark-mid-grey!important;
+}
+
+.rounded{
+  border-radius: 10px!important;
+}
+
+.border-orange{
+  border-color: $brand-color!important;
 }
