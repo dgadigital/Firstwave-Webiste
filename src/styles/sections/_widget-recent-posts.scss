@@ -1,0 +1,30 @@
+.widget-recent-posts{
+    border: 1px solid #979797;
+    box-shadow: 0px 0px 30px -20px;
+    .title{
+        color: $brand-color;
+        font-family: $font-montserrat-semibold;
+    }
+    .recent-post{
+        padding-left: 36px;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            margin-top: 10px;
+            left: 46px;
+            width: 24px;
+            height: 14px;
+            margin-right: 10px;
+            background-image: url(../assets/images/arrow-link.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+    }
+}

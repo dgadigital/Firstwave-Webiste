@@ -16,7 +16,8 @@
   'sections/page-pagination', 'sections/home-banner',
   'sections/page-investor-desc', 'sections/page-faq',
   'sections/page-meet-the-team', 'sections/page-investor-graph',
-  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing';
+  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing', 
+  'sections/widget-form', 'sections/widget-recent-posts', 'sections/widget-up-date', 'sections/widget-social-icons';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
@@ -25,7 +26,9 @@
 @import 'components/buttons', 'components/forms', 'components/modals', 'components/slick-slider-blog-post';
 
 // 6. Page-specific styles
-@import 'pages/careers';
+@import 'pages/careers', 'pages/single-post';
+
+
 
 // 7. Themes
 @import 'themes/default';
