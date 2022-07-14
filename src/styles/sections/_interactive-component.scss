@@ -1,0 +1,437 @@
+.interactive-section {
+    padding-top: 70px;
+    padding-bottom: 90px;
+
+    .title-holder {
+        max-width: 1035px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container {
+        max-width: 970px;
+    }
+
+    .interactive-row {
+        display: flex;
+        flex-wrap: nowrap;
+
+        @media (max-width: 991px) {
+            flex-direction: column-reverse;
+        }
+
+
+    }
+
+    .row-list {
+        width: 310px;
+        max-width: 100%;
+
+        @media (max-width: 991px) {
+            padding-top: 60px;
+            margin: 0 auto;
+        }
+
+        .content-list {
+            .content-list-title {
+                font-size: 26px;
+                line-height: 36px;
+                font-family: $font-montserrat-semibold;
+
+                @media (max-width: 991px) {
+                    text-align: center;
+                }
+            }
+    
+            .content-list-item {
+                padding-right: 45px;
+                padding-bottom: 20px;
+    
+                .holder {
+                    display: flex;
+                    align-items: center;
+    
+                    .icon {
+                        width: 56px;
+                    }
+    
+                    .link {
+                        position: relative;
+                        width: 78%;
+                        font-family: $font-montserrat-bold;
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding-left: 10px;
+    
+                        &:after { 
+                            content: url('../assets/images/arrow-right-interactive.png');
+                            position: absolute;
+                            top: 0;
+                            right: -35px;
+    
+                            transition: right 0.2s;
+                        }
+    
+                        &:hover:after {
+                            right: -31px;
+                            transition: right 0.2s;
+                        }
+    
+                        a {
+                            color: $title-color;
+    
+                            &:hover {
+                                color: $brand-color;
+                            }
+                        }
+                    }
+                }
+            }
+    
+    
+            &.option-1 {
+                .content-list-title {
+                    color: $brand-color;
+                }
+            }
+    
+            &.option-2 {
+                display: none;
+
+                .content-list-title {
+                    color: $brand-dark-blue;
+                }
+            }
+    
+            &.option-3 {
+                display: none;
+
+                .content-list-title {
+                    color: $brand-light-blue;
+                }
+            }
+        }
+    }
+
+
+    .row-component {
+        padding-top: 98px;
+        width: 67%;
+
+        @media (max-width: 991px) {
+            width: 629px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 0;
+            width: 100%;
+        }
+
+
+        .btn-mobile {
+            display: none;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
+
+            .floating-btn {
+                padding: 15px 25px;
+                margin: 0 auto;
+                max-width: 400px;
+                font-size: 21px;
+                line-height: 28px;
+                color: #fff;
+                text-align: center;
+                font-family: $font-montserrat-bold;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                box-shadow: 0px 0px 31px -3px rgba(0,0,0,0.34);
+                cursor: pointer;
+            }
+
+            img {
+                padding-bottom: 30px;
+            }
+            
+            .btn-1 {
+                margin-bottom: 15px;
+                background-color: $brand-color;
+            }
+
+            .btn-2 {
+                margin-bottom: 15px;
+                background-color: $brand-dark-blue;
+            }
+
+            .btn-3 {
+                background-color: $brand-light-blue;
+            }
+        }
+
+        .component-holder {
+            position: relative;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+
+            .floating-btn {
+                padding: 15px 25px;
+                font-size: 21px;
+                line-height: 28px;
+                color: #fff;
+                font-family: $font-montserrat-bold;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                box-shadow: 0px 0px 31px -3px rgba(0,0,0,0.34);
+                cursor: pointer;
+                transition: padding 0.3s;
+
+                &:hover {
+                    padding: 17px 27px;
+                    transition: padding 0.3s;
+                }
+            }
+            
+            .btn-1 {
+                position: absolute;
+                top: -45px;
+                left: 103px;
+
+                background-color: $brand-color;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    height: 50px;
+                    width: 30px;
+                    top: 100%;
+                    left: 50%;
+                    border-left: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            .btn-2 {
+                background-color: $brand-dark-blue;
+
+                position: absolute;
+                top: 28%;
+                right: 2%;
+
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    height: 50px;
+                    width: 50px;
+                    top: 100%;
+                    right: 50%;
+                    border-right: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            .btn-3 {
+                background-color: $brand-light-blue;
+                
+                position: absolute;
+                bottom: -2%;
+                left: 16%;
+
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    height: 25px;
+                    width: 50px;
+                    bottom: 100%;
+                    right: 50%;
+                    border-right: 1px solid #fff;
+                    border-bottom: none;
+                }
+            }
+
+            .image-holder {
+
+                .bg-1 {
+                    // display: none;
+
+                    position: absolute;
+                    top: -10%;
+                    z-index: -1;
+                }
+
+                .bg-2 {
+                    display: none;
+                    
+                    position: absolute;
+                    bottom: -10%;
+                    right: -5%;
+                    z-index: -1;
+                }
+
+                .bg-3 {
+                    display: none;
+                    
+                    position: absolute;
+                    bottom: -18%;
+                    right: 13%;
+                    z-index: -1;
+                }
+            }
+
+            .icons-1 {
+                // display: none;
+
+                position: absolute;
+                top: -12%;
+                left: 49%;
+                width: 50%;
+                height: 38%;
+
+                img {
+                    transition: all 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: all 0.3s;
+                    }
+                }
+
+                .i1 {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                .i2 {
+                    position: absolute;
+                    top: 5%;
+                    left: 23%;
+                }
+
+                .i3 {
+                    position: absolute;
+                    left: 45%;
+                    top: 25%;
+                }
+
+                .i4 {
+                    position: absolute;
+                    left: 62%;
+                    top: 37%;
+                }
+
+                .i5 {
+                    position: absolute;
+                    top: 63%;
+                    right: 11%;
+                }
+            }
+
+            .icons-2 {
+                display: none;
+
+                position: absolute;
+                bottom: -12%;
+                left: 44%;
+                width: 57%;
+                height: 73%;
+
+                img {
+                    transition: all 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: all 0.3s;
+                    }
+                }
+
+                .m1 {
+                    position: absolute;
+                    bottom: 84%;
+                    left: 88%;
+                }
+
+                .m2 {
+                    position: absolute;
+                    bottom: 68%;
+                    left: 86%;
+                }
+
+                .m3 {
+                    position: absolute;
+                    bottom: 53%;
+                    left: 82%;
+                }
+
+                .m4 {
+                    position: absolute;
+                    bottom: 37%;
+                    left: 73%;
+                }
+
+                .m5 {
+                    position: absolute;
+                    bottom: 24%;
+                    left: 58%;
+                }
+
+                .m6 {
+                    position: absolute;
+                    bottom: 11%;
+                    left: 42%;
+                }
+
+                .m7 {
+                    position: absolute;
+                    bottom: 7%;
+                    left: 23%;
+                }
+
+                .m8 {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+
+            .icons-3 {
+                display: none;
+
+                position: absolute;
+                bottom: 10%;
+                left: 8%;
+                width: 57%;
+                height: 38%;
+
+                img {
+                    transition: all 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: all 0.3s;
+                    }
+                }
+
+                .a1 {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                .a2 {
+                    position: absolute;
+                    bottom: 27%;
+                    left: -10%;
+                }
+            }
+        }
+
+    }
+}
