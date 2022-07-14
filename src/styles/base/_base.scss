@@ -158,6 +158,14 @@ input[type="text"] {
 .bg-light-grey2{
   background-color: $light-grey2;
 }
+.bg-light-grey2{
+  background-color: $light-grey2;
+}
+
+//Linear Gradient
+.linear-gradient-grey2{
+  background-image: linear-gradient(to bottom, rgba(214, 214, 214, 0.47) 4%, rgba(251, 251, 251, 0.47) 43%);
+}
 
 //Shadows
 .shadow{  

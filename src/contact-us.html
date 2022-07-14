@@ -52,101 +52,524 @@
 
     <nav class="navbar navbar-light navbar-expand-lg main-nav">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src=".\assets\images\logo.png"></a>
+        <a class="navbar-brand" href="/"><img src=".\assets\images\logo.png"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-line"></span>
+            <span class="navbar-toggler-line"></span>
+            <span class="navbar-toggler-line"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
 
+                <li class="nav-item">
+                 
+                    <a class="nav-link toggle-arrow has-dropdown" title="Products" data-parent="Products" href="https://google.com">Products</a>
+                    <div class="next-stage"></div>
 
+                    <div class="drop-menu animate slideIn" id="Products">
+                      <div class="container">
+                        
+                        <div class="drop-menu-list">
 
-                <li class="nav-item dropdown">
+                          <div class="drop-menu-list-title">
+                            <div class="menu-title desktop">Products by Category</div>
+                            <div class="menu-title mobile">Products</div>
+                            <div class="back">Back</div>
+                          </div>
 
-                  <a class="nav-link toggle-arrow" href="/components.html" >Products </a>
-                  <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                          <div class="list-wrapper" style="column-count: 1;">
+                            <div class="drop-menu-list-item">
+                              <a href="#" title="Audit" data-label="Audit" class="nav-link with-inner-list">Audit
+                                <span>Audit & Discovery.</span>
+                              </a>
+                              <div class="next-stage-inner"></div>
+                            </div>
+                            <div class="drop-menu-list-item">
+                              <a href="#" title="Manage" data-label="Manage" class="nav-link with-inner-list">Manage
+                                <span>Network Management.</span>
+                              </a>
+                              <div class="next-stage-inner"></div>
+                            </div>
+                            <div class="drop-menu-list-item">
+                              <a href="#" title="Secure" data-label="Secure" class="nav-link with-inner-list">Secure
+                                <span>Cybersecurity Solutions.</span>
+                              </a>
+                              <div class="next-stage-inner"></div>
+                            </div>
+                          </div>
 
-                  <div class="dropdown-menu animate slideIn" aria-labelledby="dropdownMenuLink">
+                        </div>
 
+                        <div class="drop-menu-list-inner">
+                          <div class="inner-list animate slideIn" id="Audit">
+                            <div class="drop-menu-list-title">
+                              <div class="menu-title desktop">Products to Secure</div>
+                              <div class="menu-title mobile">Products to Secure</div>
+                              <div class="back">Back</div>
+                            </div>
+                            <div class="list-wrapper" style="column-count: 2;">
+                              <a href="#" title="Email Security" class="nav-link">Email Security
+                                <span>Protects every employee using business email.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Web Security
+                                <span>Centralised view of service and security for all web users.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Endpoint Security
+                                <span>Ideal for highly effective protection of endpoints across SMB organisations.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Firewall Security
+                                <span>Full-orchestrated by CyberCision platform from cloud or within service providers's own infrastracture.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Advance Detection and Response
+                                <span>Automatically uncover and stop elusive threats with agility and precision.</span>
+                              </a>
+                            </div>
+                          </div>
 
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="inner-list animate slideIn" id="Manage">
+                            <div class="drop-menu-list-title">
+                              <div class="menu-title desktop">Products to Secure 2</div>
+                              <div class="menu-title mobile">Products to Secure 2</div>
+                              <div class="back">Back</div>
+                            </div>
+                            <div class="list-wrapper" style="column-count: 2;">
+                              <a href="#" title="Email Security" class="nav-link">Email Security
+                                <span>Protects every employee using business email.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Web Security
+                                <span>Centralised view of service and security for all web users.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Endpoint Security
+                                <span>Ideal for highly effective protection of endpoints across SMB organisations.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Firewall Security
+                                <span>Full-orchestrated by CyberCision platform from cloud or within service providers's own infrastracture.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Advance Detection and Response
+                                <span>Automatically uncover and stop elusive threats with agility and precision.</span>
+                              </a>
+                            </div>
+                          </div>
 
-
-                  </div>
-
-
+                          <div class="inner-list animate slideIn" id="Secure">
+                            <div class="drop-menu-list-title">
+                              <div class="menu-title desktop">Products to Secure 3</div>
+                              <div class="menu-title mobile">Products to Secure 3</div>
+                              <div class="back">Back</div>
+                            </div>
+                            <div class="list-wrapper" style="column-count: 2;">
+                              <a href="#" title="Email Security" class="nav-link">Email Security
+                                <span>Protects every employee using business email.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Web Security
+                                <span>Centralised view of service and security for all web users.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Endpoint Security
+                                <span>Ideal for highly effective protection of endpoints across SMB organisations.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Firewall Security
+                                <span>Full-orchestrated by CyberCision platform from cloud or within service providers's own infrastracture.</span>
+                              </a>
+                              <a href="#" title="Manage" class="nav-link">Advance Detection and Response
+                                <span>Automatically uncover and stop elusive threats with agility and precision.</span>
+                              </a>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
                 </li>
 
 
 
 
+                <li class="nav-item">
+                 
+                  <a class="nav-link toggle-arrow has-dropdown" title="Solutions" data-parent="Solutions" href="https://google.com">Solutions</a>
+                  <div class="next-stage"></div>
 
+                  <div class="drop-menu animate slideIn" id="Solutions">
+                    <div class="container">
+                      
+                      <div class="drop-menu-list">
 
+                        <div class="drop-menu-list-title">
+                          <div class="menu-title desktop">Solutions by Industry</div>
+                          <div class="menu-title mobile">Solutions</div>
+                          <div class="back">Back</div>
+                        </div>
 
+                        <div class="list-wrapper" style="column-count: 1;">
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Audit" data-label="ManagedServiceProviders" class="nav-link with-inner-list">Managed Service Providers
+                              <span>FirstWave solutions for Managed Service Providers.</span>
+                            </a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Manage" data-label="SmallMediumBusiness" class="nav-link with-inner-list">Small/Medium Business
+                              <span>FirstWave solutions designed to grow with your business.</span>
+                            </a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" data-label="LargeEnterprise" class="nav-link with-inner-list">Large Enterprise
+                              <span>FirstWave solutions designed specifically for enterprises.</span>
+                            </a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" data-label="ConfigandCompliance" class="nav-link with-inner-list">Config and Compliance
+                              <span>Audit and manage, compliance and configurations.</span>
+                            </a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" data-label="UseCase" class="nav-link with-inner-list">Use Case
+                              <span>FirstWave can help build your solution use case.</span>
+                            </a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                        </div>
+                      </div>
 
+                      <div class="drop-menu-list-inner">
+                        <div class="inner-list animate slideIn" id="ManagedServiceProviders">
+                          <div class="drop-menu-list-title">
+                            <div class="menu-title desktop">Solutions for Managed Service Providers</div>
+                            <div class="menu-title mobile">Solutions for Managed Service Providers</div>
+                            <div class="back">Back</div>
+                          </div>
+                          <div class="list-wrapper" style="column-count: 2;">
+                            <a href="#" title="Email Security" class="nav-link">Products & Features
+                              <span>Firstwave offers MSP Software that is designed to scale.</span>
+                            </a>
+                            <p class="recommended">Recommended Products</p>
+                            <a href="#" title="Manage" class="nav-link">NMIS
+                              <span>Network Management Information System.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opCharts
+                              <span>Dynamic Actionable Charts.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opHA
+                              <span>High Availability and Scaling.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">Resources
+                              <span>Latest case studies, blogs, white papers to help MSPs.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">FAQs
+                              <span>Frequently Asked Questions by MSPs.</span>
+                            </a>
+                          </div>
+                        </div>
 
+                        <div class="inner-list animate slideIn" id="SmallMediumBusiness">
+                          <div class="drop-menu-list-title">
+                            <div class="menu-title desktop">Solutions for Managed Service Providers - 2</div>
+                            <div class="menu-title mobile">Solutions for Managed Service Providers - 2</div>
+                            <div class="back">Back</div>
+                          </div>
+                          <div class="list-wrapper" style="column-count: 2;">
+                            <a href="#" title="Email Security" class="nav-link">Products & Features
+                              <span>Firstwave offers MSP Software that is designed to scale.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">NMIS
+                              <span>Network Management Information System.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opCharts
+                              <span>Dynamic Actionable Charts.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opHA
+                              <span>High Availability and Scaling.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">Resources
+                              <span>Latest case studies, blogs, white papers to help MSPs.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">FAQs
+                              <span>Frequently Asked Questions by MSPs.</span>
+                            </a>
+                          </div>
+                        </div>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" title="Solutions" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Solutions
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="inner-list animate slideIn" id="LargeEnterprise">
+                          <div class="drop-menu-list-title">
+                            <div class="menu-title desktop">Solutions for Managed Service Providers - 3</div>
+                            <div class="menu-title mobile">Solutions for Managed Service Providers - 3</div>
+                            <div class="back">Back</div>
+                          </div>
+                          <div class="list-wrapper" style="column-count: 2;">
+                            <a href="#" title="Email Security" class="nav-link">Products & Features
+                              <span>Firstwave offers MSP Software that is designed to scale.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">NMIS
+                              <span>Network Management Information System.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opCharts
+                              <span>Dynamic Actionable Charts.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opHA
+                              <span>High Availability and Scaling.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">Resources
+                              <span>Latest case studies, blogs, white papers to help MSPs.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">FAQs
+                              <span>Frequently Asked Questions by MSPs.</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="inner-list animate slideIn" id="ConfigandCompliance">
+                          <div class="drop-menu-list-title">
+                            <div class="menu-title desktop">Solutions for Managed Service Providers - 4</div>
+                            <div class="menu-title mobile">Solutions for Managed Service Providers - 4</div>
+                            <div class="back">Back</div>
+                          </div>
+                          <div class="list-wrapper" style="column-count: 2;">
+                            <a href="#" title="Email Security" class="nav-link">Products & Features
+                              <span>Firstwave offers MSP Software that is designed to scale.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">NMIS
+                              <span>Network Management Information System.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opCharts
+                              <span>Dynamic Actionable Charts.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opHA
+                              <span>High Availability and Scaling.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">Resources
+                              <span>Latest case studies, blogs, white papers to help MSPs.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">FAQs
+                              <span>Frequently Asked Questions by MSPs.</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="inner-list animate slideIn" id="UseCase">
+                          <div class="drop-menu-list-title">
+                            <div class="menu-title desktop">Solutions for Managed Service Providers - 5</div>
+                            <div class="menu-title mobile">Solutions for Managed Service Providers - 5</div>
+                            <div class="back">Back</div>
+                          </div>
+                          <div class="list-wrapper" style="column-count: 2;">
+                            <a href="#" title="Email Security" class="nav-link">Products & Features
+                              <span>Firstwave offers MSP Software that is designed to scale.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">NMIS
+                              <span>Network Management Information System.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opCharts
+                              <span>Dynamic Actionable Charts.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">opHA
+                              <span>High Availability and Scaling.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">Resources
+                              <span>Latest case studies, blogs, white papers to help MSPs.</span>
+                            </a>
+                            <a href="#" title="Manage" class="nav-link">FAQs
+                              <span>Frequently Asked Questions by MSPs.</span>
+                            </a>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
                   </div>
                 </li>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" title="Resources" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Resources
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+
+                <li class="nav-item">
+                 
+                  <a class="nav-link toggle-arrow has-dropdown" title="Resources" data-parent="Resources" href="https://google.com">Resources</a>
+                  <div class="next-stage"></div>
+
+                  <div class="drop-menu animate slideIn no-inner" id="Resources">
+                    <div class="container">
+                      
+                      <div class="drop-menu-list">
+
+                        <div class="drop-menu-list-title">
+                          <div class="menu-title desktop">Resources</div>
+                          <div class="menu-title mobile">Resources</div>
+                          <div class="back">Back</div>
+                        </div>
+
+                        <div class="list-wrapper" style="column-count: 2;">
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Audit" class="nav-link">Blogs</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Manage" class="nav-link">Webinars</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" class="nav-link">White Papers</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" class="nav-link">Case Studies</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" class="nav-link">News/Press Release</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" class="nav-link">Testimonials</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                        </div>
+
+                        <div class="no-inner-submenu">
+                          <p>Support</p>
+                          <div class="list-wrapper" style="column-count: 1;">
+                            <a href="#" title="Email Security" class="nav-link">Wiki</a>
+                            <a href="#" title="Email Security" class="nav-link">Open Support Ticket</a>
+                            <a href="#" title="Email Security" class="nav-link">Free Trials</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="drop-menu-list-inner">
+
+                        <div class="inner-list">
+
+                          <div class="drop-menu-list-title">
+                            <div class="menu-title desktop">Support</div>
+                            <div class="menu-title mobile">Support</div>
+                            <div class="back">Back</div>
+                          </div>
+                          <div class="list-wrapper" style="column-count: 1;">
+                            <a href="#" title="Email Security" class="nav-link">Wiki</a>
+                            <a href="#" title="Email Security" class="nav-link">Open Support Ticket</a>
+                            <a href="#" title="Email Security" class="nav-link">Free Trials</a>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
                 </li>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" title="About" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+
+
+                <li class="nav-item">
+                 
+                  <a class="nav-link toggle-arrow has-dropdown" title="About" data-parent="About" href="https://google.com">About</a>
+                  <div class="next-stage"></div>
+
+                  <div class="drop-menu animate slideIn no-inner" id="About">
+                    <div class="container">
+                      
+                      <div class="drop-menu-list">
+
+                        <div class="drop-menu-list-title">
+                          <div class="menu-title desktop">About</div>
+                          <div class="menu-title mobile">About</div>
+                          <div class="back">Back</div>
+                        </div>
+
+                        <div class="list-wrapper" style="column-count: 1;">
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Audit" class="nav-link">About FirstWave</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Manage" class="nav-link">Why FirstWave</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" class="nav-link">Become a Partner</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" class="nav-link">Investor Centre</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="drop-menu-list-inner">
+
+                        <div class="inner-list">
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
                 </li>
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" title="Contact" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Contact
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <li class="nav-item">
+                 
+                  <a class="nav-link toggle-arrow has-dropdown" title="Contact" data-parent="Contact" href="https://google.com">Contact</a>
+                  <div class="next-stage"></div>
+
+                  <div class="drop-menu animate slideIn no-inner" id="Contact">
+                    <div class="container">
+                      
+                      <div class="drop-menu-list">
+
+                        <div class="drop-menu-list-title">
+                          <div class="menu-title desktop">Contact</div>
+                          <div class="menu-title mobile">Contact</div>
+                          <div class="back">Back</div>
+                        </div>
+
+                        <div class="list-wrapper" style="column-count: 1;">
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Audit" class="nav-link">Contact Us</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Manage" class="nav-link">Locations</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                          <div class="drop-menu-list-item">
+                            <a href="#" title="Secure" class="nav-link">Book a Demo</a>
+                            <div class="next-stage-inner"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="drop-menu-list-inner">
+
+                        <div class="inner-list">
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
                 </li>
 
                 <li class="nav-item nav-btn">
-                  <a class="btn btn-brand btn-arrow" href="#" data-toggle="modal" data-target="#book-a-demo">Book a Demo</a>
+                  <a class="btn btn-brand btn-arrow" href="#">Book a Demo</a>
                 </li>
             </ul>
+
+            <div class="mobile-menu-footer">
+              <ul>
+                <li><a href="#"><img src=".\assets\images\search-icon.png"></a></li>
+                <li><a hre="#" class="login">Login</a></li>
+              </ul>
+              <a href="#" class="btn btn-brand">Book a Demo</a>
+            </div>
         </div>
       </div>
     </nav>
 
   </header>
 
-  <main class="home">
+  <main>
 
-    <section class="section-intro">
+    <section class="section-intro pt-0">
       <div class="container px-md-0">
         <div class="row">
           <div class="col-12 px-md-0">
@@ -159,8 +582,6 @@
         </div>
       </div>
     </section>
-
-    
 
     <section class="section-contact-us-form mb-md-4">
       <div class="container">
@@ -236,8 +657,6 @@
         </div>
       </div>
     </section>
-
-    
 
     <section class="section-2-columns">
       <div class="container py-4">
@@ -447,7 +866,7 @@
 
               <div class="widgets-item widget-area-6">
                 <div class="socials-wrapper">
-                  <p class="login-footer"><a href="#" >Login</a></p>
+                  <p class="login-footer"><a href="#" class="">Login</a></p>
                   <div class="contact-footer">
                     <a href="#" class="btn btn-brand">Contact</a>
                   </div>
@@ -506,27 +925,33 @@
     </div>
 
     <div class="footer-mobile">
+
       <div class="footer-mobile-top">
-        <p>Stay up to date with the latest news, tips and product features</p>
-        <input type="email" class="form-control" placeholder="Email*">
-        <a href="#" class="btn btn-brand">Subscribe</a>
-        <div class="socials-mobile">
-          <a href=""><img src=".\assets\images\facebook-footer.png"></a>
-          <a href=""><img src=".\assets\images\twitter-footer.png"></a>
-          <a href=""><img src=".\assets\images\linkedin-footer.png"></a>
+        <div class="container">
+          <p>Stay up to date with the latest news, tips and product features</p>
+          <input type="email" class="form-control" placeholder="Email*">
+          <a href="#" class="btn btn-brand">Subscribe</a>
+          <div class="socials-mobile">
+            <a href=""><img src=".\assets\images\facebook-footer.png"></a>
+            <a href=""><img src=".\assets\images\twitter-footer.png"></a>
+            <a href=""><img src=".\assets\images\linkedin-footer.png"></a>
+          </div>
+          <p class="footer-mobile-copyright">
+            Copyright © 2021 FirstWave Cloud Technology Ltd.  All rights reserved.  
+            <br />
+            <a href="#">Privacy Policy</a>&nbsp;<a href="#">Terms of Use</a>
+          </p>
         </div>
-        <p class="footer-mobile-copyright">
-          Copyright © 2021 FirstWave Cloud Technology Ltd.  All rights reserved.  <a href="#">Privacy Policy</a>&nbsp;<a href="#">Terms of Use</a>
-        </p>
       </div>
       <div class="footer-mobile-bottom">
-        <a href="#" class="btn btn-brand btn-arrow">Book A Demo</a>
+        <div class="container">
+          <a href="#" class="btn btn-brand btn-arrow">Book A Demo</a>
+        </div>
       </div>
+
     </div>
 
   </footer>
-
-  
 
   <!-- Modal -->
   <div class="modal fade" id="book-a-demo" tabindex="-1" role="dialog" aria-labelledby="book-a-demo-label" aria-hidden="true">
