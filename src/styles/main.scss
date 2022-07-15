@@ -16,18 +16,15 @@
   'sections/page-pagination', 'sections/home-banner',
   'sections/page-investor-desc', 'sections/page-faq',
   'sections/page-meet-the-team', 'sections/page-investor-graph',
-<<<<<<< HEAD
-  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing', 'sections/page-search-intro';
-  'sections/widget-form', 'sections/widget-recent-posts', 'sections/widget-up-date', 'sections/widget-social-icons';
-=======
-  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing', 'sections/page-search-intro';
->>>>>>> origin/gh-sddev
+  'sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing', 'sections/page-search-intro',
+  'sections/widget-form', 'sections/widget-recent-posts', 'sections/widget-up-date', 'sections/widget-social-icons',
+  'sections/post-cta';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/buttons', 'components/forms', 'components/modals', 'components/slick-slider-blog-post';
+@import 'components/buttons', 'components/forms', 'components/modals', 'components/slick-slider-blog-post', 'components/slick-slider-related-posts';
 
 // 6. Page-specific styles
 @import 'pages/careers', 'pages/single-post';

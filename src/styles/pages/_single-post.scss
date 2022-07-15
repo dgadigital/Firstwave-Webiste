@@ -70,6 +70,12 @@
         p:last-child{
             margin-bottom: 0;
         }
+        &::before{
+            content: url('/assets/images/blockquote-icon.png');
+            margin-bottom: 10px;
+            display: inline-block;
+            height: 32px;
+        }
     }
     .section-gray-content{
         padding: 40px;

@@ -170,6 +170,49 @@ AppName.Modules.ThemeModule = (function () {
     };
   };
 
+  var _relatedpostElements = () => {
+    function setmaxHeight() {
+      $('.related-posts').each(function () {
+        var blogTitle = 0;
+        var blogExcerpt = 0;
+
+        $('.related-posts article .post-title').css({
+          'min-height': '0',
+        });
+
+        $('.related-posts article .post-excerpt').css({
+          'min-height': '0',
+        });
+
+        $('article .post-title', this).each(function () {
+          if ($(this).height() > blogTitle) {
+            blogTitle = $(this).height();
+          }
+        });
+
+        $('article .post-excerpt', this).each(function () {
+          if ($(this).height() > blogExcerpt) {
+            blogExcerpt = $(this).height();
+          }
+        });
+
+        $('.related-posts article .post-title').css({
+          'min-height': blogTitle,
+        });
+
+        $('.related-posts article .post-excerpt').css({
+          'min-height': blogExcerpt,
+        });
+      });
+    }
+
+    setmaxHeight();
+
+    window.onresize = function (event) {
+      setmaxHeight();
+    };
+  };
+
   var _tabsResources = () => {
     var firstTab = $('.section-tabs-resources .nav-pills li:first').html();
     $('.section-tabs-resources .tabs-mobile li').html(firstTab);
@@ -211,6 +254,7 @@ AppName.Modules.ThemeModule = (function () {
     _tabsResources();
     _modalVideo();
     _slickSliders();
+    _relatedpostElements();
     _blogpostElements();
     // _footerMenu();
   };
