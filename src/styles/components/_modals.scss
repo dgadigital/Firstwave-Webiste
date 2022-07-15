@@ -1,7 +1,22 @@
 .modal{
-    &#book-a-demo{
+
+    &#book-a-demo{        
+        @media(max-width:991px){        
+            overflow-y: scroll!important;
+        }
         .modal-dialog{
             max-width:1000px;
+
+            @media(max-width:991px){
+                max-width:calc(100vw - 1rem);
+                margin:0.5rem!important;
+            }
+
+            .container{
+                @media(max-width:991px){
+                    max-width:100%;
+                }
+            }
         }
     }
 }
