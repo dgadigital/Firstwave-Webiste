@@ -112,8 +112,8 @@ AppName.Modules.ThemeModule = (function () {
       adaptiveHeight: true,
       // touchMove: true,
       // swipe: true,
-      prevArrow: '<img src="../assets/images/prev-slider-icon.png" class="img-fluid slick-prev">',
-      nextArrow: '<img src="../assets/images/next-slider-icon.png" class="img-fluid slick-next">',
+      prevArrow: '<img src="./assets/images/prev-slider-icon.png" class="img-fluid slick-prev">',
+      nextArrow: '<img src="./assets/images/next-slider-icon.png" class="img-fluid slick-next">',
       responsive: [
         {
           breakpoint: 767,

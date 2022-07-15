@@ -69,16 +69,19 @@
             button{
                 
                 &:before{
-                    color:#C2C2C2;
-                    opacity:1;
-                    font-size:9px;
+                    content: '';
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    background: #999;
+                    opacity: 1;
                 }
             }
             
             &.slick-active{
                 button{
                     &:before{
-                        color:$brand-color;
+                        background:$brand-color;
                     }
                 }
             }
