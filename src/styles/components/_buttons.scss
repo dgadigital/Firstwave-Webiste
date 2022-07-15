@@ -118,4 +118,12 @@
         right: 0;
         transition: all 0.3s;
     }
+
+    &.arrow-link-lg{
+        font-size:18px;
+
+        @media(max-width:767px){
+            font-size:14px;
+        }
+    }
 }
