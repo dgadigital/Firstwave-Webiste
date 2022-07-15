@@ -15,13 +15,14 @@
   'sections/page-3-columns', 'sections/page-job-listing', 'sections/page-pagination', 'sections/home-banner', 'sections/page-faq',
   'sections/page-meet-the-team', 'sections/icon-box', 'sections/column-2-showcase', 'sections/solution',
   'sections/page-investor-desc', 'sections/page-investor-graph','sections/page-subscribe', 'sections/page-tabs-resources', 'sections/page-search-listing',
-  'sections/interactive-component', 'sections/page-search-intro', 'sections/widget-form', 'sections/widget-recent-posts', 'sections/widget-up-date', 'sections/widget-social-icons';
+  'sections/interactive-component', 'sections/page-search-intro', 'sections/widget-form', 'sections/widget-recent-posts', 'sections/widget-up-date', 'sections/widget-social-icons',
+  'sections/post-cta';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/buttons', 'components/forms', 'components/modals', 'components/slick-slider-blog-post';
+@import 'components/buttons', 'components/forms', 'components/modals', 'components/slick-slider-blog-post', 'components/slick-slider-related-posts';
 
 // 6. Page-specific styles
 @import 'pages/careers', 'pages/single-post';
