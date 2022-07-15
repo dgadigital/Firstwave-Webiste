@@ -123,19 +123,40 @@ AppName.Modules.ThemeModule = (function () {
         },
       ],
     });
+    $('.resources-post-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      adaptiveHeight: true,
+      dots: false,
+      // touchMove: true,
+      // swipe: true,
+      prevArrow: '<img src="./assets/images/prev-slider-icon.png" class="img-fluid slick-prev">',
+      nextArrow: '<img src="./assets/images/next-slider-icon.png" class="img-fluid slick-next">',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
   };
 
   var _blogpostElements = () => {
     function setmaxHeight() {
-      $('.blog-post-slider').each(function () {
+
+      $('.blog-post-slider, .resources-post-slider').each(function () {
         var blogTitle = 0;
         var blogExcerpt = 0;
 
-        $('.blog-post-slider article .post-title').css({
+        $('article .post-title', this).css({
           'min-height': '0',
         });
 
-        $('.blog-post-slider article .post-excerpt').css({
+        $('article .post-excerpt', this).css({
           'min-height': '0',
         });
 
@@ -151,11 +172,11 @@ AppName.Modules.ThemeModule = (function () {
           }
         });
 
-        $('.blog-post-slider article .post-title').css({
+        $('article .post-title', this).css({
           'min-height': blogTitle,
         });
 
-        $('.blog-post-slider article .post-excerpt').css({
+        $('article .post-excerpt', this).css({
           'min-height': blogExcerpt,
         });
       });
