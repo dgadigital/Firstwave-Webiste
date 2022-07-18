@@ -171,8 +171,14 @@ input[type="text"] {
 .shadow{  
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
 }
+.shadow-sm{  
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+}
 .shadow-bottom{
   box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.15);
+}
+.shadow-inset-top{  
+  box-shadow: inset 0px 20px 20px 0px rgba(0,0,0,0.15);
 }
 
 //Borders

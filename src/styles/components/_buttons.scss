@@ -46,6 +46,18 @@
             background-color: $hover-light-blue;
         }
     }
+
+    &.btn-mid-grey {
+        color: #fff;
+        background-color: $dark-mid-grey2;
+    
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+            background-color: $dark-mid-grey2;
+        }
+    }
     
     &.btn-arrow {
         position: relative;

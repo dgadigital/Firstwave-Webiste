@@ -1,0 +1,46 @@
+.section-tabbed-accordion{
+    .tab-container{
+        .tab-btn{
+            .btn{
+                &[aria-expanded="true"]{
+                    background-color:#e63e31;
+                    pointer-events: none;
+                }
+            }
+        }
+        
+        .tab-content{
+            .accordion-item{
+                &:not(:last-child){
+                    border-bottom: 1px solid #9c9c9c;
+                }
+                
+                .accordion-heading{
+                    a{
+                        display:block;
+                        position:relative;
+                        padding-right:30px;
+                        
+                        &:after{
+                            display:flex;
+                            align-items:center;
+                            position:absolute;
+                            top:calc(50% + 2px);
+                            right:0;
+                            transform:translate(0, -50%);
+                            
+                        }
+                        
+                        &[aria-expanded="false"]:after{
+                            content:url('../assets/images/icon-plus.png');
+                        }
+                        &[aria-expanded="true"]:after{
+                            content:url('../assets/images/icon-minus.png');
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
