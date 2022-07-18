@@ -192,9 +192,23 @@ input[type="text"] {
   border-color: $brand-color!important;
 }
 
-u.custom-underline {
-  padding-top: 0;
-  text-shadow: -2px -2px #fff, -2px 2px #fff, 2px -2px #fff, 2px 2px #fff;
-  text-decoration: none;
-  border-bottom: 3px solid #000;
+.half-grey-bg {
+  &:after {
+    content: '';
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: $light-grey2;
+    z-index: -2;
+  }
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pt-80 {
+  padding-top: 80px;
 }

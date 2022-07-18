@@ -113,6 +113,10 @@
         transition: all 0.3s;
     }
 
+    &.white:after {
+        background-image: url('../assets/images/white-arrow.png') !important;
+    }
+
     &:hover:after {
         content: '';
         right: 0;
