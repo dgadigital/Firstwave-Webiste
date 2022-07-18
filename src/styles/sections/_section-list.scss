@@ -1,0 +1,44 @@
+.section-list {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+
+    .section-list-area {
+        padding-top: 40px;
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    .section-list-item {
+        display: flex;
+        padding-bottom: 10px;
+
+        .icon {
+            width: 60px;
+        }
+
+        .text {
+            padding-left: 25px;
+            width: 94%;
+
+            .title {
+                margin-bottom: 0;
+                font-size: 26px;
+                line-height: 36px;
+                font-family: $font-montserrat-semibold;
+
+                @media (max-width: 767px) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .btn-holder {
+        padding-top: 20px;
+        a {
+            width: 220px;
+            max-width: 100%;
+        }
+    }
+}
