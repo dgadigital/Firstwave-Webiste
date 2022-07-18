@@ -10,6 +10,10 @@
         }
         
         .tab-content{
+            @media(max-width:767px){
+                padding:0!important;
+            }
+
             .accordion-item{
                 &:not(:last-child){
                     border-bottom: 1px solid #9c9c9c;
@@ -42,5 +46,9 @@
                 
             }
         }
+    }
+
+    .section-tabs-resources{
+        padding:0 15px;
     }
 }
