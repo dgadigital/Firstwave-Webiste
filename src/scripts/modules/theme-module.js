@@ -136,9 +136,17 @@ AppName.Modules.ThemeModule = (function () {
       nextArrow: '<img src="./assets/images/next-slider-icon.png" class="img-fluid slick-next">',
       responsive: [
         {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            dots: true,
+          },
+        },
+        {
           breakpoint: 767,
           settings: {
             slidesToShow: 1,
+            dots: true,
           },
         },
       ],
