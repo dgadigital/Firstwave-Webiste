@@ -1,4 +1,4 @@
-.section-tabbed-accordion{
+.section-tabs-accordion{
     .tab-container{
         .tab-btn{
             .btn{
@@ -10,10 +10,6 @@
         }
         
         .tab-content{
-            @media(max-width:767px){
-                padding:0!important;
-            }
-
             .accordion-item{
                 &:not(:last-child){
                     border-bottom: 1px solid #9c9c9c;
@@ -29,9 +25,8 @@
                             display:flex;
                             align-items:center;
                             position:absolute;
-                            top:calc(50% + 2px);
+                            top:2px;
                             right:0;
-                            transform:translate(0, -50%);
                             
                         }
                         
@@ -46,9 +41,5 @@
                 
             }
         }
-    }
-
-    .section-tabs-resources{
-        padding:0 15px;
     }
 }

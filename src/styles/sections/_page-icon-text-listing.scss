@@ -1,39 +1,31 @@
 .section-icon-text-listing{
     .listing{
-        ul{
-            padding-left:0;
-            list-style:none;
-            margin-bottom:0;
+        a{
+            display:flex;
+            align-items: center;
+            font-family: 'Montserrat Bold';
+            margin: 0 0 1.5rem;
+            color: #12141d;
+            border-radius:10px;
             
-            li{
-                a{
-                    display:flex;
-                    align-items: center;
-                    font-family: 'Montserrat Bold';
-                    margin: 0 0 1.5rem;
-                    color: #12141d;
-                    border-radius:10px;
-                    
-                    &:hover,
-                    &.active{
-                        color:white;
-                        
-                        &.icon-orange{
-                            background-color:#E63E31;
-                        }
-                        &.icon-dark-blue{
-                            background-color:#1F284F;
-                        }
-                        &.icon-blue{
-                            background-color:#3A6097;
-                        }
-                    }
+            &:hover,
+            &[aria-expanded="true"]{
+                color:white;
+                
+                &.icon-orange{
+                    background-color:#E63E31;
                 }
-                span{
-                    margin-left:10px;
-                    line-height:1.2;
+                &.icon-dark-blue{
+                    background-color:#1F284F;
+                }
+                &.icon-blue{
+                    background-color:#3A6097;
                 }
             }
+        }
+        span{
+            margin-left:10px;
+            line-height:1.2;
         }
     }
 }

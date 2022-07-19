@@ -22,7 +22,7 @@
   'sections/page-search-intro', 'sections/widget-form',
   'sections/widget-recent-posts', 'sections/widget-up-date',
   'sections/widget-social-icons', 'sections/post-cta',
-  'sections/page-partner-ecosystem', 'sections/section-list', 'sections/page-icon-text-listing', 'sections/page-tabbed-accordion',
+  'sections/page-partner-ecosystem', 'sections/section-list', 'sections/page-icon-text-listing', 'sections/page-tabs-accordion',
   'sections/solution-boxes';
 
 // 4. Layout-related sections
@@ -31,7 +31,7 @@
 // 5. Components
 @import 'components/buttons', 'components/forms', 'components/modals',
   'components/slick-slider-blog-post', 'components/slick-slider-related-posts',
-  'components/slick-slider-resources-post';
+  'components/slick-slider-resources-post','components/dropdowns';
 
 // 6. Page-specific styles
 @import 'pages/careers', 'pages/single-post';

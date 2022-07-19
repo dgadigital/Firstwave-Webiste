@@ -346,6 +346,19 @@ AppName.Modules.ThemeModule = (function () {
 
   }
 
+  
+
+  var _dropdownSelect = () => {
+    $('.component-dropdown').each(function () {
+      $('.dropdown-toggle', this).text($('.dropdown-item:first-child', this).text());      
+    });   
+
+    $('.component-dropdown .dropdown-menu .dropdown-item').on('click', function() {
+      var getValue = $(this).text();
+      $('.dropdown-toggle', $(this).parent().parent()).text(getValue);
+    });
+  }
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -359,6 +372,7 @@ AppName.Modules.ThemeModule = (function () {
     _blogpostElements();
     _solutionsSlider();
     _interactiveSection();
+    _dropdownSelect();
     // _footerMenu();
   };
 
