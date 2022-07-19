@@ -5,8 +5,8 @@ AppName.Modules.ThemeModule = (function () {
   //////////////////////
   // Private Methods //
   ////////////////////
-  const _privateMethod = () => {
-    // private stuff
+  var _privateMethod = () => {
+
   };
 
   var _megaMenu = () => {
@@ -352,6 +352,57 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
 
+
+  var _tabboxes = () => {
+    function kkk() {
+      
+      $('.box-btn a').each(function () {
+        $(this).click(function(e) {
+            if ($(window).width() > 991) {
+            var dataID = $(this).data("id");
+            var linkID = $(this).attr('id');
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            $('.' + linkID).children().removeClass('active');
+            $(this).parent().siblings('.box-tabs').find('#' + dataID).addClass('active');
+            e.preventDefault();
+          }
+        });
+      });
+
+      $('.boxes').each(function () {
+        $(this).click(function() {
+          if ($(window).width() < 991) {
+            var headerID =  $(this).data("header");
+            $('.boxes').removeClass('active');
+            $(this).addClass('active');
+            $('.slider-box').hide();
+            $(".slider-box[data-parent='"+headerID+"']").show();
+            $(".slider-box[data-parent='"+headerID+"']").get(0).slick.setPosition();
+          }
+        });
+      });
+      
+    }
+
+    kkk();
+
+    $(window).on('resize', function () {
+      kkk();
+      $('.boxes').removeClass('active');
+      $('.slider-box').hide();
+    });
+
+
+    $('.slider-box').not('.slick-initialized').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
+  }
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -365,7 +416,7 @@ AppName.Modules.ThemeModule = (function () {
     _blogpostElements();
     _solutionsSlider();
     _interactiveSection();
-    // _footerMenu();
+    _tabboxes();
   };
 
   return {
