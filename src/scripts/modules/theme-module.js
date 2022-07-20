@@ -5,9 +5,30 @@ AppName.Modules.ThemeModule = (function () {
   //////////////////////
   // Private Methods //
   ////////////////////
-  var _privateMethod = () => {
+  var _anchorBar = () => {
+    $('.anchor-slide-bar-list li a').click(function(){
+			$('html, body').animate({
+				scrollTop: $( $(this).attr('href') ).offset().top - 150
+			}, 500);
+			return false;
+		});
 
+    $('#select-anchor').change( function () {
+      var targetPosition = $($(this).val()).offset().top - 150;
+      $('html,body').animate({ scrollTop: targetPosition}, 'slow');
+    });
   };
+
+  var _footerMobileMenu = () => {
+
+    $('.m-dropdown').each(function () {
+      $(this).click(function() {
+        $('.menu-item').removeClass('active');
+        $(this).closest('.menu-item').addClass('active');
+      });
+
+    });
+  }
 
   var _megaMenu = () => {
     function checkWidth() {
@@ -418,7 +439,6 @@ AppName.Modules.ThemeModule = (function () {
   // Public Methods //
   ///////////////////
   const init = function () {
-    _privateMethod();
     _megaMenu();
     _tabsResources();
     _modalVideo();
@@ -430,6 +450,8 @@ AppName.Modules.ThemeModule = (function () {
     _dropdownSelect();
     // _footerMenu();
     _tabboxes();
+    _anchorBar();
+    _footerMobileMenu();
   };
 
   return {
