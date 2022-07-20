@@ -371,11 +371,7 @@ AppName.Modules.ThemeModule = (function () {
       $('.bg-3').fadeIn();
       $('.icons-3').fadeIn();
     });
-<<<<<<< HEAD
   };
-=======
-  };  
->>>>>>> gh-sddev
 
   var _dropdownSelect = () => {
 
