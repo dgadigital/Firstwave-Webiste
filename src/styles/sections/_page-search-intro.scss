@@ -34,6 +34,10 @@
         font-family: $font-montserrat-semibold;
         color: $brand-color;
       }
+
+      &:hover {
+        color: $brand-color;
+      }
     }
   }
 }

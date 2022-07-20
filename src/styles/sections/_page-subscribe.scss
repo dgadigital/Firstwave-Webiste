@@ -124,6 +124,14 @@
       p {
         margin-bottom: 0;
 
+        a {
+          color: $text-color;
+
+          &:hover {
+            color: $brand-color;
+          }
+        }
+
         @media (max-width: 575px) {
           text-align: center;
         }

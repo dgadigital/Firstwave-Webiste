@@ -58,12 +58,17 @@
 
       li {
         font-family: $font-montserrat-bold;
-        color: $brand-color;
 
         &:not(:last-child) {
           margin-bottom: 25px;
           padding-bottom: 25px;
           border-bottom: 1px solid $dark-mid-grey2;
+        }
+
+        a {
+          &:hover {
+            color: $text-color;
+          }
         }
       }
     }
