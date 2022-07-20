@@ -1,0 +1,202 @@
+.tab-boxes {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .container {
+        @media (min-width: 992px) {
+            max-width: 970px;
+        }
+    }
+
+
+
+    .boxes {
+        padding: 30px;
+        box-shadow: 0 0 30px -20px;
+        border: 1px solid #CDCDCD;
+
+        @media (max-width: 991px) {
+            padding: 20px;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        &.active {
+            background-color: $brand-dark-blue;
+
+            p {
+                color: #fff;
+            }
+
+            img {
+                -webkit-filter: brightness(0) invert(1);
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    .col-flex {
+        display: flex;
+    }
+
+    .box-btn {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        min-height: 370px;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+
+        a {
+            display: block;
+            padding: 12px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 19px;
+            font-family: $font-montserrat-bold;
+            color: #fff;
+            background-color: #C2C2C2;
+            border-radius: 10px;
+
+            &.active {
+                background-color: $brand-dark-blue;
+            }
+
+            &:hover {
+                background-color: $brand-dark-blue;
+            }
+        }
+    }
+    
+
+    .tabs-wrapper {
+        .box-header {
+            text-align: center;
+
+            @media (max-width: 991px) {
+                display: flex;
+            }
+
+            .title-ticker{
+                padding-top: 20px;
+                margin: 0;
+                min-height: 88px;
+                font-size: 24px;
+                line-height: 34px;
+
+                @media (max-width: 991px) {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 30px;
+                    padding-top: 0;
+                    width: 85%;
+                    text-align: left;               
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            .image-holder {
+                min-height: 122px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 991px) {
+                    width: 25%;
+                    min-height: 80px;
+                }
+            }
+        }
+    }
+
+    .box-tabs {
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+
+        h6 {
+            font-size: 14px;
+            line-height: 24px;
+            font-family: $font-montserrat-bold;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .box-tabs-item {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    .tab-boxes-sliders {
+        display: none;
+
+        @media (max-width: 991px) {
+            display: block;
+        }
+
+        .slider-box {
+            display: none;
+            // visibility: hidden;
+            // position: absolute;
+            // left: 1000%;
+
+            padding: 35px 35px 55px 35px;
+            margin-top: 20px;
+            box-shadow: 0 0 30px -20px;
+            border: 1px solid $brand-dark-blue;
+
+            h6 {
+                font-size: 14px;
+                line-height: 24px;
+                font-family: $font-montserrat-bold;
+            }
+    
+            p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            .slick-dots {
+                bottom: 25px;
+                left: 0;
+
+                li {
+                    margin: 0 10px;
+                    height: 8px;
+                    width: 8px;
+
+                    &.slick-active {
+                        button:before {
+                            background: $brand-color;
+                        }
+                    }
+                }
+
+                button {
+                    height: 8px;
+                    width: 8px;
+
+                    &:before {
+                        content: '';
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 50%;
+                        background: $mid-grey;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

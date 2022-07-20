@@ -1,0 +1,44 @@
+.column-2-greybox {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    .container {
+        background-color: $dark-mid-grey2;
+        padding: 60px 90px;
+
+        @media (max-width: 767px) {
+            padding: 30px 50px;
+        }
+    }
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $font-montserrat-bold;
+    }
+
+    h3, span {
+        color: #fff;
+    }
+
+    ul {
+        padding-top: 10px;
+
+        li {
+            padding-bottom: 10px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: $font-montserrat-bold;
+        }
+    }
+
+    .form-side {
+        padding-left: 50px;
+
+        @media (max-width: 767px) {
+            padding-left: 0; 
+        }
+    }
+}
