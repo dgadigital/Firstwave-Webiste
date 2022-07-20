@@ -386,14 +386,14 @@ AppName.Modules.ThemeModule = (function () {
   };   
 
   var _typeJS = () => {
-
-    new Typed('.typed-animate',{
-      stringsElement: '.typed-text',
-      typeSpeed : 40,
-      delaySpeed : 90,
-      loop : true
-    });
-
+    if ($('.typed-animate')[0]) {
+      new Typed('.typed-animate',{
+        stringsElement: '.typed-text',
+        typeSpeed : 40,
+        delaySpeed : 90,
+        loop : true
+      });
+    }
   }; 
 
   var _tabboxes = () => {
