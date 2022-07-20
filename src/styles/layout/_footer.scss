@@ -260,7 +260,6 @@ footer {
 
     .footer-mobile {
         display: none;
-        background-color: $brand-dark-blue;
         color: #fff;
 
         @media (max-width: 767px){
@@ -272,9 +271,77 @@ footer {
             padding-left: 25px;
         }
 
+        .footer-mobile-list {
+
+            ul {
+                padding-left: 30px;
+                padding-right: 30px;
+                margin: 0;
+
+                li {
+                    padding-bottom: 20px;
+
+                    a {
+                        color: $text-color;
+                        font-family: $font-montserrat-bold;
+                    }
+                }
+            }
+
+            .menu-item {
+                .menu-parent {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .m-dropdown {
+                        width: 15px;
+                        height: 15px;
+                        
+                        background-image: url(../assets/images/menu-dropdown.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: auto;
+                    }
+                }
+
+                &.active {
+                    .menu-sub {
+                        display: block;
+                    }
+                }
+
+                .menu-sub {
+                    display: none;
+                    padding: 20px 0 0 0;
+
+                    li:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    li a {
+                        font-family: $font-montserrat;
+                    }
+                }
+            }
+
+        }
+
+        .footer-mobile-search {
+            padding-bottom: 50px;
+            padding-top: 30px;
+
+            p {
+                padding-left: 30px;
+                padding-right: 30px;
+                font-family: $font-montserrat-bold;
+            }
+        }
+
         .footer-mobile-top {
             padding-top: 30px;
             padding-bottom: 30px;
+            background-color: $brand-dark-blue;
 
             p {
                 font-size: 12px;

@@ -597,7 +597,41 @@
       </div>
     </section>
 
-    <section class="section-2-columns-with-image">
+    <section class="anchor-slide-bar border-top shadow-bottom">
+      <div class="container">
+        <div class="desktop-view">
+          <ul class="anchor-slide-bar-list">
+            <li><a href="#what_is_nmis">What is NMIS</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#data_sheet">Data Sheet</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#support">FAQs & Support</li>
+            <li><a href="#book_a_demo">Book A Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-view">
+
+          <select name="dropdpown" id="select-anchor" class="anchor-select form-control">
+            <option value="#what_is_nmis">What is NMIS</option>
+            <option value="#benefits">Benefits</option>
+            <option value="#features">Features</option>
+            <option value="#data_sheet">Data Sheet</option>
+            <option value="#download">Download</option>
+            <option value="#solutions">Solutions</option>
+            <option value="#pricing">Pricing</option>
+            <option value="#support">FAQs & Support</option>
+            <option value="#book_a_demo">Book A Demo</option>
+          </select>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2-columns-with-image" id="what_is_nmis">
       <div class="container py-2">
         <div class="row">
           <div class="col-12">
@@ -622,7 +656,7 @@
     </section>
 
 
-    <section class="section-review-list position-relative half-grey-bg">
+    <section class="section-review-list position-relative half-grey-bg" >
       <div class="container py-4 pb-md-5">
         <div class="row">
           <div class="col-md-6 mb-5">
@@ -672,7 +706,7 @@
     </section>
 
 
-    <section class="column-2-showcase text-center bg-light-grey2">
+    <section class="column-2-showcase text-center bg-light-grey2" id="benefits">
       <div class="container">
         <p class="title-ticker">Network Management And Cybersecurity Automation Platform</p>
         <h3>Tailored Tools To Automate The Way Your Team Works</h3>
@@ -779,7 +813,7 @@
 
 
 
-    <section class="tab-boxes">
+    <section class="tab-boxes" id="features">
 
       <div class="container">
 
@@ -1055,8 +1089,7 @@
     </section>
 
 
-
-    <section class="section-cta bg-dark-blue">
+    <section class="section-cta bg-dark-blue" id="data_sheet">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8 text-light py-4">
@@ -1074,7 +1107,7 @@
       </div>
     </section>
 
-    <section class="solution-boxes">
+    <section class="solution-boxes" id="solutions">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -1176,7 +1209,7 @@
     </section>
 
 
-    <section class="section-cta bg-dark-blue">
+    <section class="section-cta bg-dark-blue" id="download">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8 text-light py-5">
@@ -1210,7 +1243,7 @@
     </section>
 
 
-    <section class="column-2-greybox bg-light-grey2">
+    <section class="column-2-greybox bg-light-grey2" id="pricing">
 
       <div class="container">
 
@@ -1259,7 +1292,7 @@
     </section>
 
 
-    <section class="section-tabs-resources bg-light-grey2 shadow-bottom">
+    <section class="section-tabs-resources bg-light-grey2 shadow-bottom" id="support">
       <div class="container">
         <div class="heading-holder text-center">
           <p class="title-ticker">FAQS And Support</p>
@@ -1477,7 +1510,7 @@
     </section>
 
 
-    <section class="pb-80 pt-80">
+    <section class="pb-80 pt-80" id="book_a_demo">
       <section class="section-intro pt-0">
         <div class="container">
           <div class="row">
@@ -1940,61 +1973,6 @@
   <script src="./scripts/modules/theme-module.js"></script>
   <script src="./scripts/bootstrapper.js"></script>
   <!-- endbuild -->
-
-  <script>
-  var w = $(window).width()
-function desktop() {
-
-if (w > 991) {
-
-  $('.box-btn a').each(function () {
-    $(this).click(function(e) {
-      var dataID = $(this).data("id");
-      var linkID = $(this).attr('id');
-      $(this).siblings().removeClass('active');
-      $(this).addClass('active');
-      $('.' + linkID).children().removeClass('active');
-      $(this).parent().siblings('.box-tabs').find('#' + dataID).addClass('active');
-      e.preventDefault();
-    });
-  });
-
-}
-}
-
-function mobile() {
-if (w < 991) {
-  console.log(w)
-  $('.boxes').each(function () {
-    $(this).click(function() {
-      var headerID =  $(this).data("header");
-      $('.boxes').removeClass('active');
-      $(this).addClass('active');
-      $('.slider-box').hide();
-      $(".slider-box[data-parent='"+headerID+"']").show();
-      $(".slider-box[data-parent='"+headerID+"']").get(0).slick.setPosition();
-    });
-  });
-} 
-}
-
-desktop();
-mobile();
-
-$(window).on('resize', function () {
-desktop();
-mobile();
-});
-
-
-$('.slider-box').slick({
-dots: true,
-infinite: true,
-speed: 300,
-slidesToShow: 1,
-adaptiveHeight: true
-});
-  </script>
 
   <!--[if lte IE 9]>
     <script src="javascripts/non-responsive.js"></script>
