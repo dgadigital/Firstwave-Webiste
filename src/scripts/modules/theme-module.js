@@ -350,9 +350,7 @@ AppName.Modules.ThemeModule = (function () {
       $('.bg-3').fadeIn();
       $('.icons-3').fadeIn();
     });
-  };
-
-  
+  };  
 
   var _dropdownSelect = () => {
     $('.component-dropdown').each(function () {
@@ -363,7 +361,18 @@ AppName.Modules.ThemeModule = (function () {
       var getValue = $(this).text();
       $('.dropdown-toggle', $(this).parent().parent()).text(getValue);
     });
-  }
+  };   
+
+  var _typeJS = () => {
+
+    new Typed('.typed-animate',{
+      stringsElement: '.typed-text',
+      typeSpeed : 40,
+      delaySpeed : 90,
+      loop : true
+    });
+
+  }; 
 
   /////////////////////
   // Public Methods //
@@ -379,6 +388,7 @@ AppName.Modules.ThemeModule = (function () {
     _solutionsSlider();
     _interactiveSection();
     _dropdownSelect();
+    _typeJS();
     // _footerMenu();
   };
 
