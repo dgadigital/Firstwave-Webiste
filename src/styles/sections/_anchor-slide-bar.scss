@@ -6,6 +6,11 @@
     background: #fff;
     z-index: 500;
 
+    @media(max-width: 991px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     ul {
         list-style: none;
         display: flex;
