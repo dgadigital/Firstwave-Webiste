@@ -34,10 +34,10 @@
 // 5. Components
 @import 'components/buttons', 'components/forms', 'components/modals',
   'components/slick-slider-blog-post', 'components/slick-slider-related-posts',
-  'components/slick-slider-resources-post','components/dropdowns';
+  'components/slick-slider-resources-post','components/slick-slider-service-provider-post','components/dropdowns';
 
 // 6. Page-specific styles
-@import 'pages/careers', 'pages/single-post', 'pages/terms-of-use';
+@import 'pages/careers', 'pages/single-post', 'pages/terms-of-use', 'pages/solutions';
 
 // 7. Themes
 @import 'themes/default';
