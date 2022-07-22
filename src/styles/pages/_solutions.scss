@@ -1,0 +1,10 @@
+.page-careers{
+    header{
+        background-color:$light-grey2;
+    }
+    .hero-image{
+        @media(max-width:767px){
+            padding:0;
+        }
+    }
+}

@@ -194,11 +194,29 @@ AppName.Modules.ThemeModule = (function () {
         },
       ],
     });
+    $('.service-provider-post-slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
   };
 
   var _blogpostElements = () => {
     function setmaxHeight() {
-      $('.blog-post-slider, .resources-post-slider').each(function () {
+      $('.blog-post-slider, .resources-post-slider, .service-provider-post-slider').each(function () {
         var blogTitle = 0;
         var blogExcerpt = 0;
 
