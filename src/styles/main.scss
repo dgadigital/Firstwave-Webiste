@@ -21,12 +21,12 @@
   'sections/page-search-listing', 'sections/interactive-component',
   'sections/page-search-intro', 'sections/widget-form',
   'sections/widget-recent-posts', 'sections/widget-up-date',
-  'sections/widget-social-icons', 'sections/post-cta',
-  'sections/page-partner-ecosystem', 'sections/section-list',
+  'sections/widget-social-icons', 'sections/post-cta', 'sections/section-list',
   'sections/page-icon-text-listing', 'sections/page-tabs-accordion',
   'sections/solution-boxes', 'sections/page-resources-card',
   'sections/page-testimonial-slider-card', 'sections/page-resources-recent-post',
-  'sections/page-download-trial', 'sections/column-2-greybox', 'sections/tab-boxes', 'sections/anchor-slide-bar' ;
+  'sections/page-download-trial', 'sections/column-2-greybox',
+  'sections/tab-boxes', 'sections/anchor-slide-bar';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
@@ -34,10 +34,12 @@
 // 5. Components
 @import 'components/buttons', 'components/forms', 'components/modals',
   'components/slick-slider-blog-post', 'components/slick-slider-related-posts',
-  'components/slick-slider-resources-post','components/slick-slider-service-provider-post','components/dropdowns';
+  'components/slick-slider-resources-post',
+  'components/slick-slider-service-provider-post', 'components/dropdowns';
 
 // 6. Page-specific styles
-@import 'pages/careers', 'pages/single-post', 'pages/terms-of-use', 'pages/solutions';
+@import 'pages/careers', 'pages/single-post', 'pages/terms-of-use',
+  'pages/solutions';
 
 // 7. Themes
 @import 'themes/default';

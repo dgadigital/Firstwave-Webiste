@@ -7,6 +7,19 @@
       @media (max-width: 767px) {
         max-width: calc(100% / 4);
         flex-basis: calc(100% / 4);
+
+        &:not(:nth-child(-n + 4)) {
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        max-width: calc(100% / 7);
+        flex-basis: calc(100% / 7);
+
+        &:not(:nth-child(-n + 7)) {
+          margin-top: 20px;
+        }
       }
     }
   }
