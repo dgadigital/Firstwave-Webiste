@@ -1,4 +1,4 @@
-.single-post{
+.single{
     header{
         background-color:$light-grey2;
     }
@@ -12,18 +12,18 @@
 }
 
 .post-content{
-        .full-width-video {
-          margin-top: -25px;
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center bottom;
+    .full-width-video {
+        margin-top: -25px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
       
-          @media(max-width:767px){
+        @media(max-width:767px){
             margin-top:0;
             padding:0 30px;
-          }
+        }
       
-          .video-container {
+        .video-container {
             position: relative;
             display: block;
             padding: 60px 15px;
@@ -62,8 +62,11 @@
               height: 100%;
               border: 0;
             }
-          }
         }
+    }
+    .aligncenter{
+        text-align: center;
+    }
     p{
         font-size: 18px;
         line-height: 26px;
@@ -123,7 +126,7 @@
             margin-bottom: 0;
         }
         &::before{
-            content: url('/assets/images/blockquote-icon.png');
+            content: url('../assets/images/blockquote-icon.png');
             margin-bottom: 10px;
             display: inline-block;
             height: 32px;
