@@ -26,7 +26,7 @@
   'sections/solution-boxes', 'sections/page-resources-card',
   'sections/page-testimonial-slider-card', 'sections/page-resources-recent-post',
   'sections/page-download-trial', 'sections/column-2-greybox',
-  'sections/tab-boxes', 'sections/anchor-slide-bar';
+  'sections/tab-boxes', 'sections/anchor-slide-bar','sections/page-image-arrow';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
@@ -35,7 +35,7 @@
 @import 'components/buttons', 'components/forms', 'components/modals',
   'components/slick-slider-blog-post', 'components/slick-slider-related-posts',
   'components/slick-slider-resources-post',
-  'components/slick-slider-service-provider-post', 'components/dropdowns';
+  'components/slick-slider-service-provider-post', 'components/dropdowns','components/slick-slider-solution-company-post-slider.scss';
 
 // 6. Page-specific styles
 @import 'pages/careers', 'pages/single-post', 'pages/terms-of-use',

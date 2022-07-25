@@ -1,0 +1,90 @@
+.solution-company-post-slider{
+    margin:0 -10px;   
+    
+
+    @media (min-width:768px) and (max-width:1200px){
+        margin: 0 50px;            
+    }
+    
+    article{
+        margin:10px;
+    }
+    
+    .image{
+        position:relative;
+        display:block;
+
+        img{
+            margin:1em auto 0;
+        }
+    }
+    
+    .post-title,
+    .post-excerpt{
+        @media (max-width:767px){
+            min-height:1px!important;
+        }
+    }
+
+    .arrow-link{
+        display:inline-block;
+        margin-top:15px;
+    }
+    
+    .slick-arrow{
+        top:22%;
+        width:19px;
+        height:auto;
+        filter: grayscale(1);
+        opacity: 0.3;
+        transition:all 0.3s;
+        
+        &.slick-prev{
+            left:-40px;
+            right:unset;
+        }
+        
+        &.slick-next{
+            left:unset;
+            right:-40px;
+        }
+        
+        &:hover{
+            filter: none;
+            opacity: 1;
+        }
+    
+        @media (max-width:767px){
+            display:none!important;
+        }
+    }
+    
+    .slick-dots{
+        position:unset;
+        margin-top:1.5rem;
+        
+        li{
+            margin:0 3px;
+            
+            button{
+                
+                &:before{
+                    content: '';
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    background: #999;
+                    opacity: 1;
+                }
+            }
+            
+            &.slick-active{
+                button{
+                    &:before{
+                        background:$brand-color;
+                    }
+                }
+            }
+        }
+    }
+}
