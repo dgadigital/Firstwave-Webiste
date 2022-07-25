@@ -75,4 +75,14 @@
       padding-bottom: 30px;
     }
   }
+  
+  &.intro-solution{
+      .hero-image{
+          margin-top:-90px;
+          
+          @media(max-width:767px){
+              margin-top:-20px;
+          }
+      }
+  }
 }
