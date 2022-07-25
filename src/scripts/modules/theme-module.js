@@ -305,7 +305,9 @@ AppName.Modules.ThemeModule = (function () {
 
   var _tabsResources = () => {
     var firstTab = $('.section-tabs-resources .nav-pills li:first').html();
+    var firstTabText = $('.section-tabs-resources .nav-pills a:first').text();
     $('.section-tabs-resources .tabs-mobile li').html(firstTab);
+    $('.section-tabs-resources .tabs-mobile li a').text(firstTabText);
 
     $('.section-tabs-resources .tabs-mobile').click(function () {
       $(this).parent().toggleClass('active');
