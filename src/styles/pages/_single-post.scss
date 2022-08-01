@@ -9,6 +9,28 @@
             }
         }
     }
+    .section-cta-post{
+        p{
+            font-size: 80%;
+        }
+        ul{
+            li{
+                font-size: 80%;
+                &::marker{
+                    content: none !important;
+                }
+                &:before{
+                    content: url(../assets/images/home-list.png);
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    height: 32px;
+                    z-index: 999999;
+                    position: absolute;
+                    left: 29px;
+                }
+            }
+        }
+    }
 }
 
 .post-content{

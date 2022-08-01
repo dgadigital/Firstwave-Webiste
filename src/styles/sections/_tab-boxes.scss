@@ -46,7 +46,8 @@
         min-height: 370px;
 
         @media (max-width: 991px) {
-            display: none;
+            /* display: none; */
+            min-height: auto;
         }
 
         a {
@@ -115,7 +116,7 @@
     .box-tabs {
 
         @media (max-width: 991px) {
-            display: none;
+            /* display: none; */
         }
 
         h6 {
