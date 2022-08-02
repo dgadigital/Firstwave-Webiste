@@ -23,10 +23,16 @@ AppName.Modules.ThemeModule = (function () {
   };
 
   var _footerMobileMenu = () => {
-    $('.m-dropdown').each(function () {
+    $('.menu-main > .menu-item > .menu-parent > .m-dropdown').each(function () {
       $(this).click(function () {
-        $('.menu-item').removeClass('active');
-        $(this).closest('.menu-item').addClass('active');
+        $('.menu-main > .menu-item').removeClass('active');
+        $(this).parent().parent().addClass('active');
+      });
+    });
+    $('.menu-sub-menu > .menu-item > .menu-parent > .m-dropdown').each(function () {
+      $(this).click(function () {
+        $('.menu-sub-menu > .menu-item').removeClass('active');
+        $(this).parent().parent().addClass('active');
       });
     });
   };

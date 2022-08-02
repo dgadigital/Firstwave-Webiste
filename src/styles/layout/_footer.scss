@@ -288,39 +288,43 @@ footer {
                 }
             }
 
-            .menu-item {
-                .menu-parent {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
+            .menu-main,
+            .menu-sub-menu{
 
-                    .m-dropdown {
-                        width: 15px;
-                        height: 15px;
-                        
-                        background-image: url(../assets/images/menu-dropdown.png);
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: auto;
-                    }
-                }
+                & > .menu-item {
+                    .menu-parent {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
 
-                &.active {
-                    .menu-sub {
-                        display: block;
-                    }
-                }
-
-                .menu-sub {
-                    display: none;
-                    padding: 20px 0 0 0;
-
-                    li:last-child {
-                        padding-bottom: 0;
+                        .m-dropdown {
+                            width: 15px;
+                            height: 15px;
+                            
+                            background-image: url(../assets/images/menu-dropdown.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: auto;
+                        }
                     }
 
-                    li a {
-                        font-family: $font-montserrat;
+                    &.active {
+                        & > .menu-sub {
+                            display: block;
+                        }
+                    }
+
+                    & > .menu-sub {
+                        display: none;
+                        padding: 20px 0 0 0;
+
+                        li:last-child {
+                            padding-bottom: 0;
+                        }
+
+                        li a {
+                            font-family: $font-montserrat;
+                        }
                     }
                 }
             }
