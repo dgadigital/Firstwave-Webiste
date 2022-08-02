@@ -458,6 +458,11 @@ AppName.Modules.ThemeModule = (function () {
             $('.' + linkID)
               .children()
               .removeClass('active');
+			      $(this)
+              .parent()
+              .siblings('.box-tabs')
+			        .find('.box-tabs-item')
+              .removeClass('active');
             $(this)
               .parent()
               .siblings('.box-tabs')
@@ -500,6 +505,33 @@ AppName.Modules.ThemeModule = (function () {
     }); */
   };
 
+  var _faqMixedContent = () => {
+    $('.icon.bi-minus').hide();
+    $('.mix-content>#accordion-2>.accordion-item:nth-child(2)').addClass('showcontent');
+    $('.mix-content>#accordion-2>.accordion-item:nth-child(2)').find('.icon.bi-plus').hide();
+    $('.mix-content>#accordion-2>.accordion-item:nth-child(2)').find('.icon.bi-minus').show();
+    $('.mix-content .accordion-item').each(function () {
+      $(this).find('.accordion-heading a').click(function (e) {
+        console.log('clicked');
+        $('.mix-content>#accordion-2>.accordion-item').removeClass('showcontent');
+        $('.mix-content>#accordion-2>.accordion-item .icon.bi-plus').show();
+        $('.mix-content>#accordion-2>.accordion-item .icon.bi-minus').hide();
+        if($(this).parent().closest('.accordion-item').hasClass('showcontent')){
+          $(this).parent().closest('.accordion-item').removeClass('showcontent');
+          console.log('hide');
+          $(this).parent().closest('.accordion-item').find('.icon.bi-plus').show();
+          $(this).parent().closest('.accordion-item').find('.icon.bi-minus').hide();
+        }
+        else{
+          $(this).parent().closest('.accordion-item').addClass('showcontent');
+          console.log('show');
+          $(this).parent().closest('.accordion-item').find('.icon.bi-plus').hide();
+          $(this).parent().closest('.accordion-item').find('.icon.bi-minus').show();
+        }
+      });
+    });
+  };
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -518,6 +550,7 @@ AppName.Modules.ThemeModule = (function () {
     _tabboxes();
     _anchorBar();
     _footerMobileMenu();
+    _faqMixedContent();
   };
 
   return {
