@@ -160,6 +160,28 @@
         overflow: hidden;
         height: 100%;
       }
+      .mix-content{
+        .accordion-item{
+          box-shadow: 0px 0px 19px -9px;
+          border: 1px solid #cdcdcd;
+          padding: 1em;
+          display: block;
+          position: relative;
+          span.icon {
+            position: absolute;
+            right: 10px;
+            background-color: #e63e31;
+            height: 16px;
+            color: #fff;
+            top: 15px;
+            width: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 1px;
+          }
+        }
+      }
     }
 
     .content-wrapper {
