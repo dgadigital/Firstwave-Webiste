@@ -167,6 +167,9 @@
           padding: 1em;
           display: block;
           position: relative;
+          .accordion-heading>div{
+            display: flex;
+          }
           span.icon {
             position: absolute;
             right: 10px;

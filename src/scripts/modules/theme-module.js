@@ -513,9 +513,6 @@ AppName.Modules.ThemeModule = (function () {
     $('.mix-content .accordion-item').each(function () {
       $(this).find('.accordion-heading a').click(function (e) {
         console.log('clicked');
-        $('.mix-content>#accordion-2>.accordion-item').removeClass('showcontent');
-        $('.mix-content>#accordion-2>.accordion-item .icon.bi-plus').show();
-        $('.mix-content>#accordion-2>.accordion-item .icon.bi-minus').hide();
         if($(this).parent().closest('.accordion-item').hasClass('showcontent')){
           $(this).parent().closest('.accordion-item').removeClass('showcontent');
           console.log('hide');
@@ -523,6 +520,9 @@ AppName.Modules.ThemeModule = (function () {
           $(this).parent().closest('.accordion-item').find('.icon.bi-minus').hide();
         }
         else{
+          $('.mix-content>#accordion-2>.accordion-item').removeClass('showcontent');
+          $('.mix-content>#accordion-2>.accordion-item .icon.bi-plus').show();
+          $('.mix-content>#accordion-2>.accordion-item .icon.bi-minus').hide();
           $(this).parent().closest('.accordion-item').addClass('showcontent');
           console.log('show');
           $(this).parent().closest('.accordion-item').find('.icon.bi-plus').hide();
