@@ -201,6 +201,24 @@ AppName.Modules.ThemeModule = (function () {
         },
       ],
     });
+    $('.customer-testimonials-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
     $('.service-provider-post-slider').slick({
       dots: false,
       arrows: false,
