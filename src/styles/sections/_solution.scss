@@ -73,6 +73,10 @@
                 bottom: -17%;
                 z-index: 0;
 
+                .single-solutions &{
+                    bottom:unset;
+                }
+
                 @media (max-width: 1499px) {
                     left: -62%;
                 }
