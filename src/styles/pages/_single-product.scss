@@ -1,0 +1,20 @@
+.single-products{
+    #benefits{
+       &.interactive-section{
+            .row-component{
+                .component-holder{
+                    .icons-1{
+                        .i1{
+                            left: 1%;
+                            top: 4%;
+                        }
+                        .i3{
+                            left: 40%;
+                            top: 16%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

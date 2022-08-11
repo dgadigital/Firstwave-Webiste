@@ -330,6 +330,10 @@ AppName.Modules.ThemeModule = (function () {
   var _tabsResources = () => {
     var firstTab = $('.section-tabs-resources .nav-pills li:first').html();
     var firstTabText = $('.section-tabs-resources .nav-pills a:first').text();
+	$('.nav-pills>a:first-child').addClass('active');
+	$('.tabs-mobile>li>a:first-child').addClass('active');
+	$('.tab-content>.tab-pane:first-child').addClass('active show');
+	$('.content-wrapper>div>div .accordion-item:first-child .collapse').addClass('show');
     $('.section-tabs-resources .tabs-mobile li').html(firstTab);
     $('.section-tabs-resources .tabs-mobile li a').text(firstTabText);
 
@@ -449,6 +453,8 @@ AppName.Modules.ThemeModule = (function () {
 
   var _tabboxes = () => {
     function kkk() {
+	  $('.box-btn>a:first-child').addClass('active');
+	  $('.box-tabs>.box-tabs-item:first-child').addClass('active');
       $('.box-btn a').each(function () {
         $(this).click(function (e) {
             var dataID = $(this).data('id');
@@ -507,9 +513,10 @@ AppName.Modules.ThemeModule = (function () {
 
   var _faqMixedContent = () => {
     $('.icon.bi-minus').hide();
-    $('.mix-content>#accordion-2>.accordion-item:nth-child(2)').addClass('showcontent');
-    $('.mix-content>#accordion-2>.accordion-item:nth-child(2)').find('.icon.bi-plus').hide();
-    $('.mix-content>#accordion-2>.accordion-item:nth-child(2)').find('.icon.bi-minus').show();
+    $('.mix-content .accordion-item:nth-child(2)').addClass('showcontent');
+    $('.mix-content .accordion-item:nth-child(2)').find('.icon.bi-plus').hide();
+    $('.mix-content .accordion-item:nth-child(2)').find('.icon.bi-minus').show();
+	$('.mix-content .accordion-item:nth-child(2)>.collapse').addClass('show');
     $('.mix-content .accordion-item').each(function () {
       $(this).find('.accordion-heading a').click(function (e) {
         console.log('clicked');
@@ -520,11 +527,10 @@ AppName.Modules.ThemeModule = (function () {
           $(this).parent().closest('.accordion-item').find('.icon.bi-minus').hide();
         }
         else{
-          $('.mix-content>#accordion-2>.accordion-item').removeClass('showcontent');
-          $('.mix-content>#accordion-2>.accordion-item .icon.bi-plus').show();
-          $('.mix-content>#accordion-2>.accordion-item .icon.bi-minus').hide();
+          $('.mix-content .accordion-item').removeClass('showcontent');
+          $('.mix-content .accordion-item .icon.bi-plus').show();
+          $('.mix-content .accordion-item .icon.bi-minus').hide();
           $(this).parent().closest('.accordion-item').addClass('showcontent');
-          console.log('show');
           $(this).parent().closest('.accordion-item').find('.icon.bi-plus').hide();
           $(this).parent().closest('.accordion-item').find('.icon.bi-minus').show();
         }
