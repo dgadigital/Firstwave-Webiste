@@ -73,7 +73,7 @@ header {
 
             .navbar-brand img {
                 @media (min-width: 992px) {
-                    max-width: 140px;
+                    // max-width: 140px;
                 }
                 transition: all 0.5s;
             }
@@ -639,6 +639,46 @@ header {
                         padding-bottom: 25px;
                         column-count: 1 !important;
                     }
+                }
+            }
+        }
+    }
+}
+
+.main-nav{
+    #navbarNav{
+        flex-wrap:wrap;
+    }
+    
+    .top-nav-wrapper{
+        display:flex;
+        justify-content: flex-end;
+        width:100%;
+        margin:10px 0;
+        
+        ul{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            li{
+                &:first-child{
+                    padding-right: 25px;
+                }
+                a{
+                    color: #e63e31;
+                    font-family: "Montserrat Bold";
+                    font-size: 14px;
+                    line-height: 24px;
                 }
             }
         }

@@ -1,0 +1,33 @@
+.section-review-list {
+
+  .testimonial-post-slider {
+    margin-top: 25px;
+
+    .slick-dots {
+      bottom: 0px;
+    }
+  }
+
+  .slick-dots {
+    li {
+      button {
+        &:before {
+          content: '';
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          background: #999;
+          opacity: 1;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            background: $brand-color;
+          }
+        }
+      }
+    }
+  }
+}
