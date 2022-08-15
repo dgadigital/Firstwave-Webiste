@@ -188,6 +188,8 @@ AppName.Modules.ThemeModule = (function () {
       arrows: false,
       infinite: true,
       speed: 300,
+      autoplay: true,
+      autoplaySpeed: 5000,
       slidesToShow: 2,
       slidesToScroll: 2,
       adaptiveHeight: true,
@@ -557,6 +559,27 @@ AppName.Modules.ThemeModule = (function () {
       });
     });
   };
+  
+
+  var _showReadMore = () => {
+    var maxLength = 100;
+    $(".show-read-more").each(function(){
+      var myStr = $(this).text();
+      if($.trim(myStr).length > maxLength){
+        var newStr = myStr.substring(0, maxLength);
+        var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+        console.log($.trim(myStr).length);
+        console.log(removedStr);
+        $(this).empty().html(newStr);
+        $(this).append('<span class="read-more">...<a href="javascript:void(0);" class="d-block">Read more</a></span>');
+        $(this).append('<span class="more-text">' + removedStr + '</span>');
+      }
+    });
+    $(".read-more").click(function(){
+      $(this).siblings(".more-text").contents().unwrap();
+      $(this).remove();
+    });
+  };
 
   /////////////////////
   // Public Methods //
@@ -577,6 +600,7 @@ AppName.Modules.ThemeModule = (function () {
     _anchorBar();
     _footerMobileMenu();
     _faqMixedContent();
+    _showReadMore();
   };
 
   return {
