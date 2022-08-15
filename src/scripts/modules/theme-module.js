@@ -391,6 +391,8 @@ AppName.Modules.ThemeModule = (function () {
           dots: true,
           infinite: true,
           speed: 300,
+          autoplay: true,
+          autoplaySpeed: 5000,
           slidesToShow: 1,
           adaptiveHeight: true,
         });
