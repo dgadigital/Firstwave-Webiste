@@ -16,7 +16,12 @@
                 }
             }
         }
-    }    
+    }
+    #download{
+        .btn{
+            white-space: unset;
+        }
+    }
 }
 #support{
     .tabs-mobile{
