@@ -1,0 +1,95 @@
+.feature-listing{
+    .tab{
+        margin: 0;
+        transition: .3s all;
+        cursor: pointer;
+        position: relative;
+        &:first-child{
+            border: 1px solid #979797;
+        }
+        &:not(:first-child){
+            border-top: 1px solid #979797;
+            border-right: 1px solid #979797;
+            border-bottom: 1px solid #979797;
+        }
+        @media(max-width: 981px){
+            border: 1px solid;
+        }
+        p{
+            font-family: "Montserrat Bold";
+            padding-bottom: 0;
+            margin: 0;
+        }
+        &.active{
+            background-color: $brand-dark-blue;
+            p{
+                color: white;
+            }
+            &:after{
+                opacity: 1;
+            }
+        }
+        &:after{
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #1f284f;
+            margin: 0;
+            position: absolute;
+            bottom: -20px;
+            right: 44%;
+            opacity: 0;
+            transition: .3s all;
+        }
+        &:hover{
+            background-color: $brand-dark-blue;
+            p{
+                color: white;
+            }
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+    .boxes{
+        padding: 30px;
+        -webkit-box-shadow: 0 0 30px -20px;
+        box-shadow: 0 0 30px -20px;
+        border: 1px solid #cdcdcd;
+        margin-bottom: 30px;
+        height: 97%;
+        .box-header{
+            text-align: center;
+            .image-holder{
+                min-height: 122px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+            .title-ticker{
+                padding-top: 20px;
+                margin: 0;
+                min-height: 88px;
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+        .content{
+            p,li{
+                font-size: 14px;
+                font-weight: 700;
+            }
+            li:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

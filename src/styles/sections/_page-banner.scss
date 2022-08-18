@@ -55,6 +55,13 @@
         height: 100%;
         border: 0;
         transform: translate(0, 0);
+        &.yt-video{
+          height: 258px;
+          top: 75px;
+          @media(max-width: 767px){
+            top: 40px;
+          }
+        }
       }
     }
 
