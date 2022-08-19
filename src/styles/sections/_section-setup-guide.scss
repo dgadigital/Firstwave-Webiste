@@ -1,0 +1,128 @@
+.setupGuide {
+    .textImage {
+        .details {
+            width: 65%;            
+            p {
+                font-family: 'Montserrat';
+                font-size: 14px;
+            }
+
+            .image {
+                position: relative;
+                top: auto;
+                bottom: 30rem;
+                .img-fluid {
+                    max-width: unset;
+                    position: absolute;
+                    left: 35rem;
+                }
+            }
+        }
+
+        .downloadButtonsHolder {
+            .downloadButton {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .documentation {
+                    margin-left: 25px;
+                }
+                a {
+                    padding: 10px 15px;
+                    margin-right: 10px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .accordion {
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            .icon {
+                color: #e63e31;
+                font-family: "Montserrat";
+                font-size: 40px;
+                font-weight: normal;
+            }
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+        }
+    }
+
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        .textImage {
+            .details {
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                .image {
+                    position: unset;
+                    display: flex;
+                    justify-content: center;
+                    .img-fluid {
+                        max-width: 100%;
+                        position: unset;
+                    }
+                }
+            }
+
+            .downloadButtonsHolder {
+                display: flex;
+                flex-flow: column;
+                order: 3;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 320px) {
+        .textImage {
+            margin: 2rem 2rem 0 2rem !important;
+            .details {
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                .image {
+                    position: unset;
+                    display: flex;
+                    justify-content: center;
+                    .img-fluid {
+                        max-width: 100%;
+                        position: unset;
+                    }
+                }
+            }
+
+            .downloadButtonsHolder {
+                display: flex;
+                flex-flow: column;
+                order: 3;
+                .downloadButton {
+                    flex-flow: column;
+                }
+
+                .documentation {
+                    margin-left: unset;
+                    margin-right: unset;
+                }
+
+                a {
+                    margin-left: unset;
+                }
+            }
+        }
+
+        .accordion {
+            margin: 0 2rem 2rem 2rem !important;
+            .accordion-item {
+                margin: 0 2rem !important;  
+            }
+        }
+    }
+}
