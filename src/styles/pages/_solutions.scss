@@ -1,10 +1,50 @@
-.page-careers{
-    header{
-        background-color:$light-grey2;
+.single-solutions{
+    .solutions{
+        .solution-row{
+            &.slider-left{
+                .floating-image{
+                    @media(max-width:1600px){
+                        left:-50%;
+                    }
+                    @media(max-width:1400px) and (min-width:992px){
+                        display:none;
+                    }
+                }
+            }
+            &.slider-right{
+                .floating-image{
+                    @media(max-width:1600px){
+                        right:-50%;
+                    }
+                    @media(max-width:1400px) and (min-width:992px){
+                        display:none;
+                    }
+                }
+                
+            }
+        } 
     }
-    .hero-image{
-        @media(max-width:767px){
-            padding:0;
+    .section-customer-testimonials{
+        .container-slider{
+            .bg-img{
+                .img-left{
+                    @media(max-width:1700px){
+                        left:-40%;
+                    }
+                    @media(max-width:1400px) and (min-width:992px){
+                        display:none;
+                    }
+                }
+                .img-right{
+                    
+                    @media(max-width:1700px){
+                        right:-40%;
+                    }
+                    @media(max-width:1400px) and (min-width:992px){
+                        display:none;
+                    }
+                }
+            }
         }
     }
 }
