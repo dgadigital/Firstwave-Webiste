@@ -49,7 +49,7 @@
         &:hover{
             background-color: $brand-dark-blue;
             p{
-                color: white;
+                color: white !important;
             }
             &:after{
                 opacity: 1;

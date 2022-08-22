@@ -582,6 +582,7 @@ AppName.Modules.ThemeModule = (function () {
   };
 
   var _featureTabs = () => {
+    $(".row-tabs a:first-child").addClass('active');
     $(".row-tabs a").each(function(e){
       $(this).click(function (e) {
         $(".row-tabs a").removeClass('active');
