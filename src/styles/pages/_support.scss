@@ -1,0 +1,14 @@
+.page-template-page-support {
+    .form-container {
+        .col-12 {
+            position: relative;
+
+            .icon-search {
+                position: absolute;
+                transform: translate(0, -50%);
+                top: 50%;
+                left: 30px;
+            }
+        }
+    }
+}

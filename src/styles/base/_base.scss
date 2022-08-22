@@ -161,6 +161,9 @@ input[type="text"] {
 .bg-light-grey2{
   background-color: $light-grey2;
 }
+.bg-light-grey3{
+  background-color:#F2F2F2;
+}
 
 //Linear Gradient
 .linear-gradient-grey1{
@@ -205,6 +208,10 @@ input[type="text"] {
   border-color: $brand-color!important;
 }
 
+.border-dark-grey{
+  border-color: #9c9c9c!important;
+}
+
 .half-grey-bg {
   &:after {
     content: '';
@@ -224,6 +231,12 @@ input[type="text"] {
 
 .pt-80 {
   padding-top: 80px;
+}
+
+/*Margin*/
+.mx-n4{
+  margin-left: -1.5rem!important;
+  margin-right: -1.5rem!important;
 }
 
 .show-read-more .more-text{
