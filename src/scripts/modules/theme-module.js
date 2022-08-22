@@ -572,12 +572,19 @@ AppName.Modules.ThemeModule = (function () {
         console.log(removedStr);
         $(this).empty().html(newStr);
         $(this).append('<span class="read-more">...<a href="javascript:void(0);" class="d-block">Read more</a></span>');
-        $(this).append('<span class="more-text">' + removedStr + '</span>');
+        $(this).append('<span class="more-text d-none">' + removedStr + '</span>');
+        $(this).append('<span class="show-less d-none"><a href="javascript:void(0);" class="d-block">Show less</a></span>');
       }
     });
     $(".read-more").click(function(){
-      $(this).siblings(".more-text").contents().unwrap();
-      $(this).remove();
+      $(this).siblings(".more-text").removeClass('d-none');
+      $(this).siblings(".show-less").removeClass('d-none');
+      $(this).addClass('d-none');
+    });
+    $(".show-less").click(function(){
+      $(this).siblings(".more-text").addClass('d-none');
+      $(this).siblings(".read-more").removeClass('d-none');
+      $(this).addClass('d-none');
     });
   };
 

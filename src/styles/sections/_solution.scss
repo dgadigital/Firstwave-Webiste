@@ -73,7 +73,7 @@
                 bottom: -17%;
                 z-index: 0;
 
-                .single-solutions &{
+                .single-solutions:not(.postid-686) &{
                     bottom:unset;
                 }
 
