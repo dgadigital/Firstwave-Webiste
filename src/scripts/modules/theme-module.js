@@ -581,6 +581,28 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
 
+  var _featureTabs = () => {
+    $(".row-tabs a").each(function(e){
+      $(this).click(function (e) {
+        $(".row-tabs a").removeClass('active');
+        console.log('clicked');
+      });
+    });
+  };
+
+  var _anchorLink = () => {
+    $('.a').click(function () {
+      $('html, body').animate(
+        {
+          scrollTop: $($(this).attr('href')).offset().top - 150,
+        },
+        500
+      );
+      return false;
+    });
+
+  };
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -601,6 +623,8 @@ AppName.Modules.ThemeModule = (function () {
     _footerMobileMenu();
     _faqMixedContent();
     _showReadMore();
+    _featureTabs();
+    _anchorLink();
   };
 
   return {

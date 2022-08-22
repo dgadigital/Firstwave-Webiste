@@ -19,30 +19,33 @@
             font-family: "Montserrat Bold";
             padding-bottom: 0;
             margin: 0;
+            color: $brand-dark-blue;
         }
         &.active{
             background-color: $brand-dark-blue;
             p{
-                color: white;
+                color: white !important;
             }
             &:after{
                 opacity: 1;
             }
         }
-        &:after{
-            content: '';
-            width: 0;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 20px solid #1f284f;
-            margin: 0;
-            position: absolute;
-            bottom: -20px;
-            right: 44%;
-            opacity: 0;
-            transition: .3s all;
-        }
+        @media(min-width: 981px){
+            &:after{
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid #1f284f;
+                margin: 0;
+                position: absolute;
+                bottom: -20px;
+                right: 44%;
+                opacity: 0;
+                transition: .3s all;
+            }
+        }   
         &:hover{
             background-color: $brand-dark-blue;
             p{
@@ -89,6 +92,23 @@
             }
             li:not(:last-child){
                 margin-bottom: 1rem;
+            }
+        }
+    }
+    .row-tabs{
+        .tab{
+            p{
+                color: $brand-dark-blue;
+            }
+        }
+    }
+    .row-boxes{
+        .tab-pane{
+            @media(min-width: 981px){
+                display: flex;
+            }
+            &:not(.active){
+                display: none;
             }
         }
     }
