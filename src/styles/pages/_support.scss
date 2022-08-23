@@ -12,36 +12,49 @@
         }
     }
 
-    .sub-section-accordion{      
-        .accordion-item{
-            &{
-                border-bottom: 1px solid #9c9c9c;
+    
+    .flexible-content-container{
+        .sub-section-listing{
+            p{
+                margin-bottom:0;
             }
-            
-            .accordion-heading{
-                a{
-                    display:block;
-                    position:relative;
-                    padding-right:30px;
-                    
-                    &:after{
-                        display:flex;
-                        align-items:center;
-                        position:absolute;
-                        top:2px;
-                        right:0;
+            strong,b{
+                font-family: "Montserrat Bold";
+            }
+        }        
+
+        .sub-section-accordion{      
+            .accordion-item{
+                &{
+                    border-bottom: 1px solid #9c9c9c;
+                }
+                
+                .accordion-heading{
+                    a{
+                        display:block;
+                        position:relative;
+                        padding-right:30px;
                         
-                    }
-                    
-                    &[aria-expanded="false"]:after{
-                        content:url('../assets/images/icon-plus.png');
-                    }
-                    &[aria-expanded="true"]:after{
-                        content:url('../assets/images/icon-minus.png');
+                        &:after{
+                            display:flex;
+                            align-items:center;
+                            position:absolute;
+                            top:2px;
+                            right:0;
+                            
+                        }
+                        
+                        &[aria-expanded="false"]:after{
+                            content:url('../assets/images/icon-plus.png');
+                        }
+                        &[aria-expanded="true"]:after{
+                            content:url('../assets/images/icon-minus.png');
+                        }
                     }
                 }
+                
             }
-            
         }
+    
     }
 }

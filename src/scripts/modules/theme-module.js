@@ -629,6 +629,12 @@ AppName.Modules.ThemeModule = (function () {
       });
   };
 
+  var _supportPageBGTransition = () => {
+    $('.section-icon-text-listing .row a').on( "click", function() {
+      $('.section-resources-post-slider').css('background-color',$(this).data('bg-color'));
+    });
+  };
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -652,6 +658,7 @@ AppName.Modules.ThemeModule = (function () {
     _featureTabs();
     _anchorLink();
     _accordionSetupGuide();
+    _supportPageBGTransition();
   };
 
   return {
