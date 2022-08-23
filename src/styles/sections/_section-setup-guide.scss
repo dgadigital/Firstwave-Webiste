@@ -35,6 +35,9 @@
                     padding: 10px 34px 10px 15px;
                     text-align: left;
                     white-space: unset;
+                    @media(max-width: 980px){
+                        width: 100%;
+                    }
                 }
             }
         }
