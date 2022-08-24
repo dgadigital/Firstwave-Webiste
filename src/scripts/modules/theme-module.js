@@ -444,6 +444,12 @@ AppName.Modules.ThemeModule = (function () {
       $('.bg-3').fadeIn();
       $('.icons-3').fadeIn();
     });
+
+    $('.interactive-section .btn-mobile .floating-btn').click(function () {
+      $('html, body').animate({
+        scrollTop: $(".interactive-section .interactive-row .row-list").offset().top-70
+      }, 1000);
+    });
   };
 
   var _dropdownSelect = () => {
