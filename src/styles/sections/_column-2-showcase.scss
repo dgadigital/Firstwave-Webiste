@@ -79,17 +79,23 @@
             align-items: center;
 
             .icon {
-                width: 56px;
+                width: 20%;
             }
 
-            .text {
-                width: 85%;
-                padding-left: 25px;
-                text-align: left;
-                font-size: 18px;
-                line-height: 22px;
-                font-family: $font-montserrat-bold;
-                color: $semi-mid-grey2;
+            .content {
+                width: 80%;
+                .title {
+                    text-align: left;
+                    line-height: 1.6;
+                }
+
+                .text {
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-family: $font-montserrat-bold;
+                    color: $semi-mid-grey2;
+                }
             }
         }
     }
