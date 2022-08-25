@@ -137,3 +137,10 @@
         }
     }
 }
+
+
+.download-btn-holder:last-child {
+    .download-btn {
+        background: transparent;
+    }
+}
