@@ -568,6 +568,29 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
 
+  var _featureChartTable = () => {
+    $('.feature-listing .icon.bi-minus').hide();
+    $('.feature-listing .accordion-item .accordion-heading').each(function () {
+      $(this).find('a').click(function (e) {
+        console.log('clicked');
+        if($(this).parent().hasClass('showcontent')){
+          $(this).parent().removeClass('showcontent');
+          console.log('hide');
+          $(this).parent().find('.icon.bi-plus').show();
+          $(this).parent().find('.icon.bi-minus').hide();
+        }
+        else{
+          $('.feature-listing .accordion-item').removeClass('showcontent');
+          $('.feature-listing .accordion-item .icon.bi-plus').show();
+          $('.feature-listing .accordion-item .icon.bi-minus').hide();
+          $(this).parent().addClass('showcontent');
+          $(this).parent().find('.icon.bi-plus').hide();
+          $(this).parent().find('.icon.bi-minus').show();
+        }
+      });
+    });
+  };
+
   var _faqContent = () => {
     $('.section-tabs-resources .accordion-faq .accordion-item:first-child a').addClass('showcontent');
     $('.section-tabs-resources .accordion-faq .accordion-item:not(:first-child) a').addClass('collapsed');
@@ -688,6 +711,7 @@ AppName.Modules.ThemeModule = (function () {
     _accordionSetupGuide();
     _supportPageBGTransition();
     _faqContent();
+    _featureChartTable();
   };
 
   return {
