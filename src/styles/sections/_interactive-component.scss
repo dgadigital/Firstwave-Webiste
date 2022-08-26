@@ -71,12 +71,12 @@
                             top: 0;
                             right: -35px;
     
-                            transition: right 0.2s;
+                            transition: all 0.5s;
                         }
     
                         &:hover:after {
                             right: -31px;
-                            transition: right 0.2s;
+                            transition: all 0.5s;
                         }
     
                         a {
