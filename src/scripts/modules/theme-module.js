@@ -258,6 +258,7 @@ AppName.Modules.ThemeModule = (function () {
       ],
     });
     $('.navbar-nav .nav-item:nth-child(2) .list-wrapper .drop-menu-list-item:first-child a').addClass('active');
+    $('.navbar-nav .nav-item:first-child .list-wrapper .drop-menu-list-item:first-child a').addClass('active');
   };
 
   var _blogpostElements = () => {
