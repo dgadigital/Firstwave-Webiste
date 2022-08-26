@@ -138,9 +138,17 @@
     }
 }
 
-
-.download-btn-holder:last-child {
-    .download-btn {
-        background: transparent;
+.postid-1809,
+.postid-1806,
+.postid-1797,
+.postid-1788,
+.postid-1775, 
+.postid-1767,
+.postid-1732 {
+    .download-btn-holder:last-child {
+        .download-btn,
+        .download-btn:hover {
+            background: transparent;
+        }
     }
 }
