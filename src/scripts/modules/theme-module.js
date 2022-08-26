@@ -257,6 +257,7 @@ AppName.Modules.ThemeModule = (function () {
         },
       ],
     });
+    $('.navbar-nav .nav-item:nth-child(2) .list-wrapper .drop-menu-list-item:first-child a').addClass('active');
   };
 
   var _blogpostElements = () => {
