@@ -1,6 +1,10 @@
 .section-image-list {
   position: relative;
   z-index: 2;
+  &.img-fluid {
+    width: 100px;
+    object-fit: scale-down;
+  }
 
   &.image-no-slider {
     .col {
