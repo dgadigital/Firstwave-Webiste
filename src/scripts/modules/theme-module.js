@@ -686,6 +686,12 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
 
+  $(document).ready(function () {
+    $("body").children().each(function() {
+        document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
+    });
+  })
+
   /////////////////////
   // Public Methods //
   ///////////////////
