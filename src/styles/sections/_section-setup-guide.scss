@@ -153,8 +153,10 @@
 }
 
 .postid-1826 {
-    .download-btn-holder:nth-child(2) .download-btn,
-    .download-btn-holder:last-child .download-btn {
-        background: transparent;
+    .download-btn-holder:nth-child(2),
+    .download-btn-holder:last-child {    
+        .download-btn {
+            background: transparent;
+        }
     }
 }
