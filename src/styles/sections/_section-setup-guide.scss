@@ -153,13 +153,17 @@
 }
 
 .postid-1826 {
-    .download {
-        .download-btn-holder:nth-child(2),
-        .download-btn-holder:last-child {    
-            .download-btn, 
-            .download-btn:hover {
-                background: transparent;
-            }
+    .download-btn-holder:nth-child(2),
+    .download-btn-holder:last-child {    
+        .download-btn, 
+        .download-btn:hover {
+            background: transparent;
         }
+    }
+}
+
+.postid-1775 {
+    .download-btn-holder:first-child .download-btn {
+        padding-right: 50px;
     }
 }
