@@ -36,13 +36,13 @@
         }
     }
 
-    .et_pb_text_inner.list {
+    .list {
         display: flex;
         justify-content: space-evenly;
         flex-flow: row wrap;
         width: 100%;
         border: 1px solid;
-        .et_pb_text_inner.list p {
+        .list p {
             width: 33.3%;
             border-bottom: 1px solid;
             padding: 10px 20px;
