@@ -62,7 +62,7 @@
     }
     .list {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         flex-flow: row wrap;
         width: 100%;
         border: 1px solid;
