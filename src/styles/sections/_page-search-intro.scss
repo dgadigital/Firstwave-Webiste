@@ -1,4 +1,10 @@
 .section-search-intro {
+    position: sticky;
+    top: 117.8px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fff;
+    z-index: 500;
   .row {
     .col-2 {
       max-width: 190px;
