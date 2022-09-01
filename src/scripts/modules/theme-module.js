@@ -686,6 +686,20 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
 
+  var _resourcesHubFreeTrials = () => {
+    var url = "#setupGuide";
+    $('.download-list a.collapsed').each(function (e) {
+      $(this).click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: $('#setupGuide').offset().top - 120,
+          },
+          500
+        );
+      });
+    });
+  };
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -712,6 +726,7 @@ AppName.Modules.ThemeModule = (function () {
     _supportPageBGTransition();
     _faqContent();
     _featureChartTable();
+    _resourcesHubFreeTrials();
   };
 
   return {
