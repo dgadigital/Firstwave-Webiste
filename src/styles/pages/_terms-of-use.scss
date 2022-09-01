@@ -12,7 +12,6 @@
     }
 }
 
-.page-id-2963,
 .page-id-2965 {
     .et_pb_text_inner {
         margin: 20px 0;
@@ -20,11 +19,10 @@
             border: 1px solid; 
             tr {
                 border: 1px solid;
-                th:first-child,
-                th:nth-child(2),
-                th:last-child {
+                th {
                     width: 33%;
                     padding: 10px 20px;
+                    border: 1px solid;
                 }
             }
             tbody {
@@ -34,8 +32,51 @@
                 }
                 td {
                     padding: 10px 20px;
+                    border: 1px solid;
                 }
             }
+        }
+    }
+}
+
+.page-id-2963 {
+    .et_pb_text_inner {
+        margin: 20px 0;
+        table {
+            border: 1px solid; 
+            tr {
+                border: 1px solid;
+                th {
+                    width: 25%;
+                    padding: 10px 20px;
+                    border: 1px solid;
+                }
+            }
+            tbody {
+                border: 1px solid;
+                tr {
+                    border: 1px solid;
+                }
+                td {
+                    padding: 10px 20px;
+                    border: 1px solid;
+                }
+            }
+        }
+    }
+    .list {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        width: 100%;
+        border: 1px solid;
+        p {
+            width: 33.3%;
+            border-bottom: 1px solid;
+            padding: 10px 20px;
+        }
+        p:last-child {
+            border: unset;
         }
     }
 }
