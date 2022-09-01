@@ -12,25 +12,29 @@
     }
 }
 
-.page-id-2963 {
-    table {
-        border: 1px solid; 
-        tr {
-            border: 1px solid;
-            th:first-child,
-            th:nth-child(2),
-            th:last-child {
-                width: 33%;
-                padding: 10px 20px;
-            }
-        }
-        tbody {
-            border: 1px solid;
+.page-id-2963,
+.page-id-2965 {
+    .et_pb_text_inner {
+        margin: 20px 0;
+        table {
+            border: 1px solid; 
             tr {
                 border: 1px solid;
+                th:first-child,
+                th:nth-child(2),
+                th:last-child {
+                    width: 33%;
+                    padding: 10px 20px;
+                }
             }
-            td {
-                padding: 10px 20px;
+            tbody {
+                border: 1px solid;
+                tr {
+                    border: 1px solid;
+                }
+                td {
+                    padding: 10px 20px;
+                }
             }
         }
     }
