@@ -35,23 +35,6 @@
             }
         }
     }
-
-    .list {
-        display: flex;
-        justify-content: space-evenly;
-        flex-flow: row wrap;
-        width: 100%;
-        border: 1px solid;
-        .list p {
-            width: 33.3%;
-            border-bottom: 1px solid;
-            padding: 10px 20px;
-        }
-        .et_pb_text_inner.list p:last-child {
-            border: unset;
-        }
-    }
-
 }
 
 .page-id-2963 {
@@ -75,6 +58,21 @@
                     padding: 10px 20px;
                 }
             }
+        }
+    }
+    .list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        width: 100%;
+        border: 1px solid;
+        .list p {
+            width: 33.3%;
+            border-bottom: 1px solid;
+            padding: 10px 20px;
+        }
+        .et_pb_text_inner.list p:last-child {
+            border: unset;
         }
     }
 }
