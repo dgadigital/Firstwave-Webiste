@@ -55,11 +55,13 @@
 @media screen and (max-width: 767px) and (min-width: 320px) {
     .section-cta {
         .wrapper {  
-            width: 100%; 
-            .content {
-                display: flex;
-                flex-direction: column;
-            } 
+            .content-holder {
+                width: 100%;         
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                } 
+            }
             
             .image-holder {
                 display: none;
