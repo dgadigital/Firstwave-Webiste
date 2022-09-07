@@ -100,6 +100,8 @@ ul.list-check {
   li {
     position: relative;
     padding-left: 1.75rem;
+    padding-bottom: 12px;
+    font-size: 15px;
 
     &:before {
       content: url('../assets/images/check.png');
