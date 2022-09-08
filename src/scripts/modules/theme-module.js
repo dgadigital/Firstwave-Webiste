@@ -59,16 +59,16 @@ AppName.Modules.ThemeModule = (function () {
           });
         });
       } else {
-        $('.next-stage').each(function () {
+        $('.nav-item>.nav-link').each(function () {
           $(this).click(function () {
             $('.drop-menu').removeClass('show');
             $(this).siblings('.drop-menu').addClass('show');
           });
         });
 
-        $('.next-stage-inner').each(function () {
+        $('.drop-menu-list-item>.nav-link.with-inner-list').each(function () {
           $(this).click(function () {
-            var label = $(this).siblings('.with-inner-list').attr('data-label');
+            var label = $(this).attr('data-label');
 
             $('.drop-menu-list-inner').addClass('show');
 
@@ -97,6 +97,10 @@ AppName.Modules.ThemeModule = (function () {
           // $('.inner-list').removeClass('show');
         });
       }
+      $('.navbar-nav>.nav-item:nth-child(2)').click(function(e) {
+          console.log('clicked');
+          event.preventDefault(e);
+      });
     }
 
     checkWidth();
