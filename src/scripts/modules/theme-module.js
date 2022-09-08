@@ -692,7 +692,7 @@ AppName.Modules.ThemeModule = (function () {
       $(this).click(function () {
         $('html, body').animate(
           {
-            scrollTop: $('#setupGuide').offset().top - 120,
+            scrollTop: $('#setupGuide').offset().top - 160,
           },
           500
         );
