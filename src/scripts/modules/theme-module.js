@@ -141,9 +141,9 @@ AppName.Modules.ThemeModule = (function () {
       // touchMove: true,
       // swipe: true,
       prevArrow:
-        '<img src="./assets/images/prev-slider-icon.png" class="img-fluid slick-prev">',
+        '<img src="http://firstwave.dgadevelopment.com.au/wp-content/uploads/2022/09/prev-slider-icon.png" class="img-fluid slick-prev">',
       nextArrow:
-        '<img src="./assets/images/next-slider-icon.png" class="img-fluid slick-next">',
+        '<img src="http://firstwave.dgadevelopment.com.au/wp-content/uploads/2022/09/next-slider-icon.png" class="img-fluid slick-next">',
       responsive: [
         {
           breakpoint: 767,
@@ -191,7 +191,7 @@ AppName.Modules.ThemeModule = (function () {
       autoplay: true,
       autoplaySpeed: 5000,
       slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       adaptiveHeight: true,
       responsive: [
         {
@@ -259,6 +259,12 @@ AppName.Modules.ThemeModule = (function () {
     });
     $('.navbar-nav .nav-item:nth-child(2) .list-wrapper .drop-menu-list-item:first-child a').addClass('active');
     $('.navbar-nav .nav-item:first-child .list-wrapper .drop-menu-list-item:first-child a').addClass('active');
+    
+    var slider = $('.testimonial-post-slider .testimonial-card').length;
+    console.log(slider);
+    if (slider <= 2){
+        $('.slick-dots').css('display', 'none');
+    }
   };
 
   var _blogpostElements = () => {
@@ -629,7 +635,7 @@ AppName.Modules.ThemeModule = (function () {
     });
     $(".read-more").click(function(){
       $(this).siblings(".more-text").removeClass('d-none');
-      $(this).siblings(".show-less").removeClass('d-none');
+      $(this).siblings(".show-less").removeClass('d-none');f
       $(this).addClass('d-none');
     });
     $(".show-less").click(function(){
@@ -679,6 +685,23 @@ AppName.Modules.ThemeModule = (function () {
             }
       });
   };
+  
+    var _accordionSetupGuideVM = () => {
+    $( "#setupGuideVM .accordion-body" ).hide();
+      $("#setupGuideVM .accordion-heading").click(function(){
+        if ($('#setupGuideVM .accordion-body').is(':visible')) {
+          $("#setupGuideVM .accordion-body").slideUp(300);
+          $("#setupGuideVM .icon").text('+');
+        }
+            if( $(this).next("#setupGuideVM .accordion-body").is(':visible')){
+                $(this).next("#setupGuideVM .accordion-body").slideUp(300);
+                $(this).children("#setupGuideVM .icon").text('+');
+            }else {
+                $(this).next("#setupGuideVM .accordion-body").slideDown(300); 
+                $(this).children("#setupGuideVM .icon").text('-');
+            }
+      });
+  };
 
   var _supportPageBGTransition = () => {
     $('.section-icon-text-listing .row a').on( "click", function() {
@@ -699,6 +722,13 @@ AppName.Modules.ThemeModule = (function () {
       });
     });
   };
+  
+  $(document).ready(function () {
+    $("body").children().each(function() {
+        document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
+    });
+  })
+  
 
   /////////////////////
   // Public Methods //
@@ -723,6 +753,7 @@ AppName.Modules.ThemeModule = (function () {
     _featureTabs();
     _anchorLink();
     _accordionSetupGuide();
+    _accordionSetupGuideVM();
     _supportPageBGTransition();
     _faqContent();
     _featureChartTable();
