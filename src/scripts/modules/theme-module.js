@@ -731,7 +731,7 @@ AppName.Modules.ThemeModule = (function () {
      $('.section-search-intro .links-holder a').click(function () {
       $('html, body').animate(
         {
-          scrollTop: $($(this).attr('href')).offset().top - 350,
+          scrollTop: $($(this).attr('href')).offset().top - 450,
         },
         500
       );
