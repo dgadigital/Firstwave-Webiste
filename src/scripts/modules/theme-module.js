@@ -727,6 +727,22 @@ AppName.Modules.ThemeModule = (function () {
     });
   };
   
+  var  _linksBar = () => {
+     $('.section-search-intro .links-holder a').click(function () {
+      $('html, body').animate(
+        {
+          scrollTop: $($(this).attr('href')).offset().top - 350,
+        },
+        500
+      );
+      return false;
+    });
+  };
+  
+  var  _fixFormSelect = () => {
+      $('#wpcf7-f4150-o1 option:first-child').text('Country *');
+  };
+  
   $(document).ready(function () {
     $("body").children().each(function() {
         document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
@@ -762,6 +778,8 @@ AppName.Modules.ThemeModule = (function () {
     _faqContent();
     _featureChartTable();
     _resourcesHubFreeTrials();
+    _linksBar();
+    _fixFormSelect();
   };
 
   return {
