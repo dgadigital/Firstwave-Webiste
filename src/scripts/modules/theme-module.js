@@ -743,6 +743,21 @@ AppName.Modules.ThemeModule = (function () {
       $('#wpcf7-f4150-o1 option:first-child').text('Country *');
   };
   
+  var  _fixFormSelect = () => {
+	if (window.location.href.indexOf("resources-hub") > -1) {
+		if(window.location.hash) {
+			var hash = window.location.hash;
+			console.log(hash);
+			$('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 250,
+            },
+            500
+          );
+		}
+	}
+  };
+  
   $(document).ready(function () {
     $("body").children().each(function() {
         document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
