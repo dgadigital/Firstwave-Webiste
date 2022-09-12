@@ -1,8 +1,4 @@
 .section-tabs-accordion{
-    .text-title {
-        text-transform: unset;
-    }
-
     .tab-container{
         .tab-btn{
             .btn{
@@ -46,4 +42,8 @@
             }
         }
     }
+}
+
+.text-title {
+    text-transform: unset;
 }
