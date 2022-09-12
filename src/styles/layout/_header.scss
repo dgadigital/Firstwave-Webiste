@@ -126,6 +126,14 @@ header {
                     font-size: 12px;
                 }
 
+                &.additional-menu {
+                    display: none;
+
+                    @media (max-width: 991px) {
+                        display: block;
+                    }
+                }
+
                 span {
                     display: block;
                     font-family: $font-montserrat;

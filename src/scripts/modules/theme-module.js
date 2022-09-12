@@ -97,10 +97,14 @@ AppName.Modules.ThemeModule = (function () {
           // $('.inner-list').removeClass('show');
         });
       }
-      $('.navbar-nav>.nav-item:nth-child(2)').click(function(e) {
-          console.log('clicked');
-          event.preventDefault(e);
-      });
+
+      if ($vWidth < 992) {
+        $(".with-inner-list").attr("href", "#")
+      }
+      // $('.navbar-nav>.nav-item:nth-child(2)').click(function(e) {
+      //     console.log('clicked');
+      //     event.preventDefault(e);
+      // });
     }
 
     checkWidth();
