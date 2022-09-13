@@ -732,7 +732,7 @@ AppName.Modules.ThemeModule = (function () {
   };
   
   var  _linksBar = () => {
-     $('.section-search-intro .links-holder a').click(function () {
+    $('#download-trial').click(function () {
       $('html, body').animate(
         {
           scrollTop: $($(this).attr('href')).offset().top - 450,
