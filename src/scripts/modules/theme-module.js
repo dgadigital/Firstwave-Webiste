@@ -100,6 +100,8 @@ AppName.Modules.ThemeModule = (function () {
 
       if ($vWidth < 992) {
         $(".with-inner-list").attr("href", "#")
+        $(".nav-item:nth-child(3) a").attr("href", "#")
+        $(".nav-item:nth-child(4) a").attr("href", "#")
       }
       // $('.navbar-nav>.nav-item:nth-child(2)').click(function(e) {
       //     console.log('clicked');
