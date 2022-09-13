@@ -98,3 +98,13 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .solutions-template-default {
+        .section-solution-company-post-slider {
+            article {
+                width: unset !important;
+            }
+        }
+    }
+}

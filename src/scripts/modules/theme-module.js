@@ -730,9 +730,9 @@ AppName.Modules.ThemeModule = (function () {
       });
     });
   };
-  
-  var  _linksBar = () => {
-    $('#download-trial').click(function () {
+
+  var _linksBar = () => {
+    $('.section-search-intro .links-holder a:last-child').click(function () {
       $('html, body').animate(
         {
           scrollTop: $($(this).attr('href')).offset().top - 450,
@@ -742,6 +742,7 @@ AppName.Modules.ThemeModule = (function () {
       return false;
     });
   };
+
   
   var  _fixFormSelect = () => {
       $('#wpcf7-f4150-o1 option:first-child').text('Country *');
